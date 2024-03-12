@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -78,25 +79,26 @@ border: 0.15rem solid #B1AFAF;
 
 .card-img{ 
 padding: 0;
+width: 50%;
 border-radius: 0.65rem;
 box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-h2{
+.h2{
+float: left;
 font-size: 2.5rem;
-text-transform: uppercase;
 color: black;
+width: 50%;
+font-style: bold;
 }
 
 .description{
 font-size: 1.45rem;
-font-weight: 400;  
+font-weight: 400;
+box-shadow: 5px 5px 5px 0px #B1AFAF, inset 4px 4px 15px 0px #B1AFAF, 5px 5px 5px 5px rgba(0,0,0,0);}
 }
 
 .quote{
 font-style: italic;
 font-size:1.35rem;
 }
-
-
-
