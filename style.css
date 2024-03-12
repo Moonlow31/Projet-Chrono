@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: "star_jedi";
+    src: url("./assets/star_jedi/starjedi/Starjedi.ttf");
+}
+@font-face {
+    font-family: "radjhani";
+    src: url("./assets/Rajdhani/Rajdhani-Regular.ttf");
+}
 
 
 *{
     box-sizing: border-box;
     margin: 0;
-}
 
+    
+}
 header {
     background-image: url(assets/light\ speed.jpg);
     background-position: center;
@@ -15,6 +23,7 @@ header {
 }
 
 header h1 {
+    font-family: "star_jedi";
    display: flex;
    justify-content: center;
    text-align: center;
@@ -78,27 +87,30 @@ border: 0.15rem solid #B1AFAF;
 }
 
 .card-img{ 
-padding: 0;
+background-color: aliceblue;
 width: 50%;
 border-radius: 0.65rem;
 box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
+margin-bottom: 30px;}
 
-.h2{
+h2{padding: auto;
+    text-align: center;
 float: left;
+font-family: "star_jedi";
 font-size: 2.5rem;
 color: black;
 width: 50%;
-font-style: bold;
+
 }
 
-.description{
+.description{padding: 2rem;
 font-size: 1.45rem;
 font-weight: 400;
-box-shadow: 5px 5px 5px 0px #B1AFAF, inset 4px 4px 15px 0px #B1AFAF, 5px 5px 5px 5px rgba(0,0,0,0);}
+box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
+border-radius: 10px;
 }
 
-.quote{
+.quote{padding: 2rem;
 font-style: italic;
 font-size:1.35rem;
 }
