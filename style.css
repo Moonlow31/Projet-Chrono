@@ -1,38 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 *{
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    margin: 0;
+}
 
+header {
+    background-image: url(assets/light\ speed.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+header h1 {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   color: #F1F200;
+   padding: 50px;
+}
+
+.navbarx {
+    display: flex;
+}
+
+#prehistoire {
+    background-color: #F07800;
+    width: calc(100vh / 7);
+}
+
+#bronze {
+    background-color: #E39C1B;
+    width: calc(100vh / 7);
+}
+
+#fer {
+    background-color: #E0B31D;
+    width: calc(100vh / 7);
+}
+
+#antique {
+    background-color: #E0C25E;
+    width: calc(100vh / 7);
+}
+
+#moyenAge {
+    background-color: #E0CB1D;
+    width: calc(100vh / 7);
+}
+
+#moderne {
+    background-color: #DFE625;
+    width: calc(100vh / 7);
+}
+
+#contemporain {
+    background-color: #F1F200;
+    width: calc(100vh / 7);
+}
+
+.navbary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .card-container{
-    
-    width: 100%; 
-  background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);  
+width: 100%; 
+background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);  
 padding: 2rem 1rem;
 width: 30%;
 border-radius:  10px 10px 10px 10px;
- 
 box-shadow: 30px 18px 17px 0px #B1AFAF;
-border: 0.15rem solid #B1AFAF; }
+border: 0.15rem solid #B1AFAF;
+}
 
 .card-img{ 
-   
 padding: 0;
 border-radius: 0.65rem;
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);}
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
 
 h2{
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: black;
+font-size: 2.5rem;
+text-transform: uppercase;
+color: black;
 }
+
 .description{
-    font-size: 1.45rem;
-    font-weight: 400;
-    
+font-size: 1.45rem;
+font-weight: 400;  
 }
-.quote{font-style: italic;
-font-size:1.35rem}
+
+.quote{
+font-style: italic;
+font-size:1.35rem;
+}
 
 
 
