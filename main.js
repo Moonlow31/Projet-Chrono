@@ -63,7 +63,7 @@ function createCard() {
 }
 */
 
-function card(img, title, desc, quote) {
+function card(img, title, desc, quote,) {
     const newCard = `
     <article class="card-container">
         <img src="${img}" class="card-img" alt="${title}">

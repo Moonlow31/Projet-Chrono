@@ -30,9 +30,13 @@ header h1 {
    color: #F1F200;
    padding: 50px;
 }
+
+button {font-family: "star_jedi";}
+
 /* Définition d'un container pour gérer l'affichage */
 .container {
     overflow: hidden;
+   
     /* Cache les éléments qui dépassent du container */
 }
 /* Définition du carousel */
@@ -56,6 +60,7 @@ header h1 {
     height: 100%;
     /* Hauteur de chaque diapositive est de 100% */
     transition: 0.5s ease-in-out;
+    
     /* Ajout d'une animation douce pour la transition entre les diapositives */
 }
 /* Définition de l'affichage du bouton de chaque diapositive */
@@ -88,8 +93,7 @@ header h1 {
 .carousel-controls button {
     padding: 10px;
     /* Ajout de padding pour un meilleur contrôle */
-    background-color: aquamarine;
-    /* Arrière-plan en aquamarine */
+    
 }
 
 .navbarx {
@@ -97,6 +101,19 @@ header h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     cursor: pointer;
 }
+#next{background-repeat: no-repeat;
+    background-color: #000000;
+     
+    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
+    
+}
+#prev{width: 1.5em;
+    
+   background-image: url(/assets/arrow/vecteezy_icone-de-fleche-gauche-3d-png-sur-fond-transparent_16774469.png);background-size: cover;
+  
+   background-repeat: no-repeat;
+   background-color: #000000;
+  }
 
 .navbary {
   display: grid;
@@ -105,41 +122,48 @@ header h1 {
   position:relative;
   inset: 742px -740px ; 
 }
+#prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);}
 
 #prehistoire1 {
     font-family: "star_jedi";
-    background-color: #F07800;
+    background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);
     font-size: 1rem;
     transform: rotate(-180deg);
 }
-
+#bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
 #bronze1 {
-    background-color: #E39C1B;font-size: 1rem;font-family: "star_jedi";
+    background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
     transform: rotate(-180deg);
 }
-
+#fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
 #fer1 {
-    background-color: #E0B31D;font-size: 1rem;font-family: "star_jedi";
+    background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
     transform: rotate(-180deg);
 }
-
+#antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
 #antique1 {
-    background-color: #E0C25E;font-size: 1rem;font-family: "star_jedi";
+    background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
     transform: rotate(-180deg);
 }
-
+#moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
 #moyenAge1 {
-    background-color: #E0CB1D;font-size: 1rem;font-family: "star_jedi";
+    background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
     transform: rotate(-180deg);
 }
-
+#moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
 #moderne1 {
-    background-color: #DFE625;font-size: 1rem;font-family: "star_jedi";
+    background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
     transform: rotate(-180deg);
 }
-
+#contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
 #contemporain1 {
-    background-color: #F1F200;font-size: 1rem;font-family: "star_jedi";
+    background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
     transform: rotate(-180deg);
 }
 
