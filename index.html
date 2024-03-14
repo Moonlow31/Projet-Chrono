@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Chronologie de l'humanité</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" async></script>
 </head>
 
 <body>
@@ -13,6 +15,7 @@
         <h1>Go past <br>or <br>back to the future</h1>
     </header>
     <main>
+
         <nav class="navbarx">
             <button id="prehistoire">Préhistoire</button>
             <button id="bronze">Age du bronze</button>
@@ -33,21 +36,85 @@
                 <button id="contemporain">Epoque contemporaine</button>
             </nav>
         </aside>
+
+        <!-- Conteneur principal pour le carrousel -->
+        <div class="container">
+            <!-- Elément carrousel -->
+            <div class="carousel">
+                <!-- Conteneur interne pour les slides -->
+                <div class="carousel-inner">
+                    <div class="slide">
+                        <button id="prehistoire">Préhistoire</button>
+                    </div>
+                    <div class="slide">
+                        <button id="bronze">Age du bronze</button>
+                    </div>
+                    <div class="slide">
+                        <button id="fer">Age du fer</button>
+                    </div>
+                    <div class="slide">
+                        <button id="antique">Antiquité</button>
+                    </div>
+                    <div class="slide">
+                        <button id="moyenAge">Moyen âge</button>
+                    </div>
+                    <div class="slide">
+                        <button id="moderne">Epoque moderne</button>
+                    </div>
+                    <div class="slide">
+                        <button id="contemporain">Epoque contemporaine</button>
+                    </div>
+                </div>
+                <!-- Conteneur pour les boutons de navigation -->
+                <div class="carousel-controls">
+                    <!-- bouton previous -->
+                    <button id="prev" ></button>
+                    <!-- bouton next -->
+                    <button id="next"></button>
+                </div>
+            </div>    
+        </div>
+    <aside>
+        <nav class="navbary">
+            <button id="prehistoire1">Préhistoire</button>
+            <button id="bronze1">Age du bronze</button> 
+            <button id="fer1">Age du fer</button> 
+            <button id="antique1">Antiquité</button>
+            <button id="moyenAge1">Moyen âge</button>
+            <button id="moderne1">Epoque moderne</button>
+            <button id="contemporain1">Epoque contemporaine</button>
+        </nav>
+ 
+
         <section class="friseBackground">
+            </section>
+
 
 
             <section>
                 
                     
 
+    <section class="cards">
+        
+      
+    <div id="zoneCartes"></div>
+
+
                     </div>
                 </article>
             </section>
+
 
             <footer>
                 <p>&copy; 2024 Wilders ( Dragon Crew). All rights reserved.</p>
             </footer>
             <script src="main.js"></script>
+
+<script src="main.js" defer></script>
+</section>
+</main>
+
 </body>
 
 </html>
