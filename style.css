@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+body {
+    position: relative;
+}
+
 header {
     background-image: url(assets/light\ speed.jpg);
     background-position: center;
@@ -31,133 +35,106 @@ header h1 {
    padding: 50px;
 }
 
-button {font-family: "star_jedi";}
-
+button {
+    font-family: "star_jedi";
+    font-size: 1rem;
+}
 
 .container {
-    overflow: hidden;}
-   
-   
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 5;;
+}
+ 
 .carousel {
     position: relative;
-   
 }
 
 .carousel-inner {
     display: flex;
-    
     overflow: hidden;
     flex-wrap: nowrap;
-    
 }
-/* Définition des diapositives */
+
 .slide {
     flex: 0 0 calc(100% / 3);
-    /* Largeur de chaque diapositive est de 100% */
     height: 100%;
-    /* Hauteur de chaque diapositive est de 100% */
     transition: 0.5s ease-in-out;
-    
-    /* Ajout d'une animation douce pour la transition entre les diapositives */
 }
-/* Définition de l'affichage du bouton de chaque diapositive */
+
 .slide button {
     width: 100%;
-    /* Largeur de l'image est de 100% */
     height: 60px;
-    /* Hauteur de l'image est de 60px */
     object-fit: cover;
-    /* Couvre tout l'espace disponible */
 }
-/* Définition des boutons de contrôle du carousel */
+
 .carousel-controls {
     position: absolute;
-    /* Les boutons sont positionnés de manière absolue */
     z-index: 5;
-    /* Ils sont placés au-dessus des autres éléments */
     left: 10px;
-    /* La distance à gauche est de 10px */
     right: 10px;
-    /* La distance à droite est de 10px */
-    top: 11px;
-    /* La distance du haut est de 11px */
+    top: 18px;
     display: flex;
-    /* Affiche les boutons en ligne */
     justify-content: space-between;
-    /* Espacement égal entre les boutons */
-}
-/* Style des boutons de contrôle */
-.carousel-controls button {
-    padding: 10px;
-    /* Ajout de padding pour un meilleur contrôle */
-    
 }
 
-.navbarx {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    cursor: pointer;
+.carousel-controls button {
+    padding: 10px;  
 }
-#next{width:1.5rem ;
+
+#next {
+    border:none;
+    width:1.5rem ;
     background-repeat: no-repeat;
-    background-color: #000000;
-    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;}
-    
-#prev{width: 1.5em; 
-   background-image: url(/assets/arrow/vecteezy_icone-de-fleche-gauche-3d-png-sur-fond-transparent_16774469.png);background-size: cover;
-   background-repeat: no-repeat;
-   background-color: #000000;}
+    background: rgb(0,0,0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
+}
+
+#prev {
+    border:none;
+    width:1.5rem ;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background: rgb(0,0,0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
+}
+
+.navBis {
+    position: absolute;
+}
 
 .navbary {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  transform: rotate(90deg);
-  position:relative;
-  inset: 742px -740px ; }
+    display: flex;
+    flex-direction: column;
+}
+
+.slidesY {
+    height: 500px;
+    width: calc(100% / 3);
+}
 
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
-#prehistoire1{
-    font-family: "star_jedi";
-    background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);
-    font-size: 1rem;
-    transform: rotate(-180deg);
-}
+#prehistoire1{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);}
+
 #bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
-#bronze1 {
-    background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);
-    font-size: 1rem;font-family: "star_jedi";
-    transform: rotate(-180deg);
-}
+#bronze1 {background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
+
 #fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
-#fer1 {
-    background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);
-    font-size: 1rem;font-family: "star_jedi";
-    transform: rotate(-180deg);
-}
+#fer1 {background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
+
 #antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
-#antique1 {
-    background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);
-    font-size: 1rem;font-family: "star_jedi";
-    transform: rotate(-180deg);
-}
+#antique1 {background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
+
 #moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
-#moyenAge1 {
-    background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);
-    font-size: 1rem;font-family: "star_jedi";
-    transform: rotate(-180deg);
-}
+#moyenAge1 {background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
+
 #moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
-#moderne1 {
-    background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);
-    font-size: 1rem;font-family: "star_jedi";
-    transform: rotate(-180deg);
-}
+#moderne1 {background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
+
 #contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
-#contemporain1 {
-    background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);
-    font-size: 1rem;font-family: "star_jedi";
-    transform: rotate(-180deg);
-}
+#contemporain1 {background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
 
 .cards {
     display: flex;
@@ -209,13 +186,14 @@ h2 {
   font-size:1.35rem;
 }
 
-  footer {
+footer {
     font-family: "radjhani";
     background-color: #F07800;
     color: black;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: absolute;
+    height: 50px;
     bottom: 0;
     width: 100%;
-  }
+}
