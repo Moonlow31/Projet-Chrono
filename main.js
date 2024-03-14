@@ -1,5 +1,3 @@
-
-
 (function () {
 
     const prev = document.querySelector('#prev');
@@ -18,7 +16,7 @@
 
 function card(img, title, desc, quote,) {
     const newCard = `
-    <article class="card-container">
+    <article class="card-container"style="background: linear-gradient(73deg, ${startcolor}, ${endcolor});">
         <img src="${img}" class="card-img" alt="${title}">
         <h2>${title}</h2>
         <div class="description"> 
@@ -43,6 +41,6 @@ const arrayCard =[{src:"/assets/imageCard/prehistoricmen.jpg", title:"l'Homme pr
 {src:"/assets/imageCard/l'homme2.0t.png", title:"L'homme 2.0",desc:"L'homme du futur, aussi connecté qu'un réseau Wi-Fi, jongle entre réalité virtuelle et intelligence artificielle, comme un danseur de tango avec des robots. Sa maison ressemble plus à un vaisseau spatial qu'à un domicile terrestre, avec des gadgets futuristes à chaque coin. Sa nourriture est fabriquée en laboratoire, mais il rêve toujours de hamburgers volants et de pizzas téléportées. Ses conversations avec les drones et les androïdes sont ponctuées de blagues algorithmiques et de mèmes holographiques. Malgré le règne des machines, l'homme 2.0 reste maître de son destin, jonglant avec des lignes de code et des circuits électriques. Il a survécu à l'attaque des machines grâce à sa compréhension et maîtrise des langages informatiques. La première phrase qu'il apprit au robot fut :",quote:"caaavvvaaaa, t'inquiète frérot."},]
 
 arrayCard.forEach(cardInfo => {
-    cards.innerHTML += card(cardInfo.src, cardInfo.title, cardInfo.desc, cardInfo.quote);
+    cards.innerHTML += card(cardInfo.src, cardInfo.title, cardInfo.desc, cardInfo.quote, cardInfo.startcolor,cardInfo.endcolor);
 
 });

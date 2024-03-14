@@ -58,17 +58,20 @@ button {
     flex-wrap: nowrap;
 }
 
+
 .slide {
     flex: 0 0 calc(100% / 3);
     height: 100%;
     transition: 0.5s ease-in-out;
 }
 
+
 .slide button {
     width: 100%;
     height: 60px;
     object-fit: cover;
 }
+
 
 .carousel-controls {
     position: absolute;
@@ -79,6 +82,7 @@ button {
     display: flex;
     justify-content: space-between;
 }
+
 
 .carousel-controls button {
     padding: 10px;  
@@ -139,7 +143,8 @@ button {
 .cards {
     display: flex;
     flex-direction:column;
-    align-items: end;   
+    align-items: end; 
+    margin-right: 35px;  
 }
 
 .card-container {
@@ -153,7 +158,8 @@ button {
 
 .card-img { 
   background-color: aliceblue;
-  width: 50%;
+  width: 200px;;
+    height: 200px;
   border-radius: 0.65rem;
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   margin-bottom: 30px;
@@ -185,10 +191,11 @@ h2 {
   font-style: italic;
   font-size:1.35rem;
 }
+/*footer*/
 
 footer {
     font-family: "radjhani";
-    background-color: #F07800;
+    background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
     color: black;
     text-align: center;
     padding: 10px;
