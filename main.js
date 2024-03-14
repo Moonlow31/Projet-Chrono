@@ -1,3 +1,5 @@
+
+
 (function () {
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
@@ -105,4 +107,5 @@ const arrayCard =[{src:"/assets/imageCard/prehistoricmen.jpg", title:"l'Homme pr
 
 arrayCard.forEach(cardInfo => {
     cards.innerHTML += card(cardInfo.src, cardInfo.title, cardInfo.desc, cardInfo.quote);
+
 });
