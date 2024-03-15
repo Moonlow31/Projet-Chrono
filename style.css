@@ -119,27 +119,52 @@ button {
     width: calc(100% / 3);
 }
 
+/* case des nav*/
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
-#prehistoire1{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);}
-
+#prehistoire1{
+    font-family: "star_jedi";
+    background: linear-gradient(73deg,  rgba(227,156,27,1) 0%,rgba(240,120,0,1) 100%);
+    font-size: 1rem;
+    border-radius: 10px 10px 10px 10px;
+}
 #bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
-#bronze1 {background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
-
+#bronze1 {
+    background: linear-gradient(73deg,rgba(224,179,29,1)0%, rgba(227,156,27,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
 #fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
-#fer1 {background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
-
+#fer1 {
+    background: linear-gradient(73deg, rgba(224,194,94,1) 0%,  rgba(224,179,29,1) 0% 100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
 #antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
-#antique1 {background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
-
+#antique1 {
+    background: linear-gradient(73deg, rgba(224,203,29,1)0%, rgba(224,194,94,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
 #moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
-#moyenAge1 {background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
-
+#moyenAge1 {
+    background: linear-gradient(73deg,rgba(223,230,37,1) 0%, rgba(224,203,29,1)  100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
 #moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
-#moderne1 {background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
-
+#moderne1 {
+    background: linear-gradient(73deg,  rgba(241,242,0,1)0%, rgba(223,230,37,1)100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg);
+     border-radius: 10px 10px 10px 10px;
+}
 #contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
-#contemporain1 {background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
-
+#contemporain1 {
+    background: linear-gradient(73deg, rgba(157,255,0,1) 0%  , rgba(241,242,0,1)100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); 
+    border-radius: 10px 10px 10px 10px;
+}
 .cards {
     display: flex;
     flex-direction:column;
