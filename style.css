@@ -16,23 +16,26 @@
 
 body {
     position: relative;
+    height: 2500px;
 }
 
 header {
-    background-image: url(assets/light\ speed.jpg);
+    background-image: url(assets/time-travel-2910934_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 450px;
 }
 
 header h1 {
+   
    font-family: "star_jedi";
    display: flex;
    justify-content: center;
    text-align: center;
-   color: #F1F200;
-   padding: 50px;
+   color: rgba(66, 24, 24, 0.79);
+   padding: 150px;
+   text-shadow: #FC0 1px 0 10px;
 }
 
 button {
@@ -115,8 +118,7 @@ button {
 }
 
 .slidesY {
-    height: 500px;
-    width: calc(100% / 3);
+
 }
 
 /* case des nav*/
@@ -183,7 +185,7 @@ button {
 
 .card-img { 
   background-color: aliceblue;
-  width: 200px;;
+  width: 200px;
     height: 200px;
   border-radius: 0.65rem;
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
