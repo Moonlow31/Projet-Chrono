@@ -27,12 +27,14 @@ header {
 }
 
 header h1 {
+   
    font-family: "star_jedi";
    display: flex;
    justify-content: center;
    text-align: center;
-   color: #F1F200;
-   padding: 50px;
+   color: rgba(66, 24, 24, 0.79);
+   padding: 150px;
+   text-shadow: #FC0 1px 0 10px;
 }
 
 button {
