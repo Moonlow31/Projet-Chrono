@@ -15,8 +15,16 @@
 }
 
 body {
-    position: relative;
+    display :flex;
+    flex-direction: column;
+	width: 100%;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
 
 header {
     background-image: url(assets/light\ speed.jpg);
@@ -34,7 +42,7 @@ header h1 {
    color: #F1F200;
    padding: 50px;
 }
-
+.content{flex-grow: 1;}
 button {
     font-family: "star_jedi";
     font-size: 1rem;
@@ -70,6 +78,7 @@ button {
     width: 100%;
     height: 60px;
     object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -115,8 +124,9 @@ button {
 }
 
 .slidesY {
-    height: 500px;
+    height: 250px;
     width: calc(100% / 3);
+    border-radius: 10px 10px 10px 10px;
 }
 
 /* case des nav*/
@@ -125,7 +135,7 @@ button {
     font-family: "star_jedi";
     background: linear-gradient(73deg,  rgba(227,156,27,1) 0%,rgba(240,120,0,1) 100%);
     font-size: 1rem;
-    border-radius: 10px 10px 10px 10px;
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
 }
 #bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
 #bronze1 {
@@ -169,7 +179,9 @@ button {
     display: flex;
     flex-direction:column;
     align-items: end; 
-    margin-right: 35px;  
+    margin-right: 35px;
+    margin-top: 35px;  
+    margin-bottom: 35px;
 }
 
 .card-container {
@@ -222,10 +234,4 @@ footer {
     font-family: "radjhani";
     background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
     color: black;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    height: 50px;
-    bottom: 0;
-    width: 100%;
 }
