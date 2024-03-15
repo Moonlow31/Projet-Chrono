@@ -2,115 +2,246 @@
     font-family: "star_jedi";
     src: url("./assets/star_jedi/starjedi/Starjedi.ttf");
 }
+
 @font-face {
     font-family: "radjhani";
-    src: url("./assets/Rajdhani/Rajdhani-Regular.ttf");
+    src: url("./assets/Rajdhani/Rajdhani-Medium.ttf");
 }
-
 
 *{
     box-sizing: border-box;
     margin: 0;
-
-    
+    padding: 0;
 }
+
+body {
+
+    display :flex;
+    flex-direction: column;
+	width: 100%;
+
+    position: relative;
+    height: 2500px;
+
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+
 header {
-    background-image: url(assets/light\ speed.jpg);
+    background-image: url(assets/time-travel-2910934_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 450px;
 }
 
 header h1 {
-    font-family: "star_jedi";
+   
+   font-family: "star_jedi";
    display: flex;
    justify-content: center;
    text-align: center;
-   color: #F1F200;
-   padding: 50px;
+   color: rgba(66, 24, 24, 0.79);
+   padding: 150px;
+   text-shadow: #FC0 1px 0 10px;
+}
+.content{flex-grow: 1;}
+button {
+    font-family: "star_jedi";
+    font-size: 1rem;
 }
 
-.navbarx {
+.container {
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 5;;
+}
+ 
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
     display: flex;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
 
-#prehistoire {
-    background-color: #F07800;
-    width: calc(100vh / 7);
+
+.slide {
+    flex: 0 0 calc(100% / 3);
+    height: 100%;
+    transition: 0.5s ease-in-out;
 }
 
-#bronze {
-    background-color: #E39C1B;
-    width: calc(100vh / 7);
+
+.slide button {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
 }
 
-#fer {
-    background-color: #E0B31D;
-    width: calc(100vh / 7);
+
+.carousel-controls {
+    position: absolute;
+    z-index: 5;
+    left: 10px;
+    right: 10px;
+    top: 18px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#antique {
-    background-color: #E0C25E;
-    width: calc(100vh / 7);
+
+.carousel-controls button {
+    padding: 10px;  
 }
 
-#moyenAge {
-    background-color: #E0CB1D;
-    width: calc(100vh / 7);
+#next {
+    border:none;
+    width:1.5rem ;
+    background-repeat: no-repeat;
+    background: rgb(0,0,0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
 }
 
-#moderne {
-    background-color: #DFE625;
-    width: calc(100vh / 7);
+#prev {
+    border:none;
+    width:1.5rem ;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background: rgb(0,0,0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
 }
 
-#contemporain {
-    background-color: #F1F200;
-    width: calc(100vh / 7);
+.navBis {
+    position: absolute;
 }
 
-.navbary {
+.cards {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-.card-container{
-width: 100%; 
-background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);  
-padding: 2rem 1rem;
-width: 30%;
-border-radius:  10px 10px 10px 10px;
-box-shadow: 30px 18px 17px 0px #B1AFAF;
-border: 0.15rem solid #B1AFAF;
-}
+.slidesY {
 
-.card-img{ 
-background-color: aliceblue;
-width: 50%;
-border-radius: 0.65rem;
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-margin-bottom: 30px;}
+    height: 250px;
+    width: calc(100% / 3);
+    border-radius: 10px 10px 10px 10px;
 
-h2{padding: auto;
-    text-align: center;
-float: left;
-font-family: "star_jedi";
-font-size: 2.5rem;
-color: black;
-width: 50%;
 
 }
 
-.description{padding: 2rem;
-font-size: 1.45rem;
-font-weight: 400;
-box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
-border-radius: 10px;
+/* case des nav*/
+#prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
+#prehistoire1{
+    font-family: "star_jedi";
+    background: linear-gradient(73deg,  rgba(227,156,27,1) 0%,rgba(240,120,0,1) 100%);
+    font-size: 1rem;
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
+#bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
+#bronze1 {
+    background: linear-gradient(73deg,rgba(224,179,29,1)0%, rgba(227,156,27,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
+#fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
+#fer1 {
+    background: linear-gradient(73deg, rgba(224,194,94,1) 0%,  rgba(224,179,29,1) 0% 100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
+#antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
+#antique1 {
+    background: linear-gradient(73deg, rgba(224,203,29,1)0%, rgba(224,194,94,1) 100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
+#moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
+#moyenAge1 {
+    background: linear-gradient(73deg,rgba(223,230,37,1) 0%, rgba(224,203,29,1)  100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); border-radius: 10px 10px 10px 10px;
+}
+#moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
+#moderne1 {
+    background: linear-gradient(73deg,  rgba(241,242,0,1)0%, rgba(223,230,37,1)100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg);
+     border-radius: 10px 10px 10px 10px;
+}
+#contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
+#contemporain1 {
+    background: linear-gradient(73deg, rgba(157,255,0,1) 0%  , rgba(241,242,0,1)100%);
+    font-size: 1rem;font-family: "star_jedi";
+    transform: rotate(-180deg); 
+    border-radius: 10px 10px 10px 10px;
+}
+.cards {
+    display: flex;
+    flex-direction:column;
+    align-items: end; 
+    margin-right: 35px;
+    margin-top: 35px;  
+    margin-bottom: 35px;
 }
 
-.quote{padding: 2rem;
-font-style: italic;
-font-size:1.35rem;
+.card-container {
+  background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);  
+  padding: 2rem 1rem;
+  width: 30%;
+  border-radius:  10px 10px 10px 10px;
+  box-shadow: 30px 18px 17px 0px #B1AFAF;
+  border: 0.15rem solid #B1AFAF;
+}
+
+.card-img { 
+  background-color: aliceblue;
+  width: 200px;
+    height: 200px;
+  border-radius: 0.65rem;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  margin-bottom: 30px;
+}
+
+h2 {
+  padding-top: 50px;
+  padding-right: 10px;
+  text-align: center;
+  float: left;
+  font-family: "star_jedi";
+  font-size: 1.5rem;
+  color: black;
+  width: 50%;
+}
+
+.description {
+  font-family: "radjhani";
+  padding: 2rem;
+  font-size: 1.45rem;
+  font-weight: 400;
+  box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
+  border-radius: 10px;
+}
+
+.quote {
+  font-family: "rajdhani";
+  padding: 2rem;
+  font-style: italic;
+  font-size:1.35rem;
+}
+/*footer*/
+
+footer {
+    font-family: "radjhani";
+    background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
+    color: black;
 }

@@ -2,58 +2,87 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Chronologie de l'humanité</title>
+    <title>Chronologie de l'humanité</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" async></script>
 </head>
 <body>
     <header>
-        <h1>Go past <br>or <br>back to the future</h1>
+        <h1>Go past <br>or <br>back to future </h1>
+
     </header>
-    <main>
-        <nav class="navbarx">
-            <button id="prehistoire">Préhistoire</button>
-            <button id="bronze">Age du bronze</button> 
-            <button id="fer">Age du fer</button> 
-            <button id="antique">Antiquité</button>
-            <button id="moyenAge">Moyen âge</button>
-            <button id="moderne">Epoque moderne</button>
-            <button id="contemporain">Epoque contemporaine</button>
-        </nav>
-    <aside>
-        <nav class="navbary">
-            <button id="prehistoire">Préhistoire</button>
-            <button id="bronze">Age du bronze</button> 
-            <button id="fer">Age du fer</button> 
-            <button id="antique">Antiquité</button>
-            <button id="moyenAge">Moyen âge</button>
-            <button id="moderne">Epoque moderne</button>
-            <button id="contemporain">Epoque contemporaine</button>
-        </nav>
-    </aside>
-        <section class="friseBackground">
 
-
-<section>
-    <article class="card-container">
+    <div class="content">
+         <main>
        
-            
-        
-        <img src="assets/anthoPixArt.png" class="card-img" alt="Image de l'homme 2.0">
-        <h2>L'homme 2.0</h2>
-        <div class="description">
-            <p>
-                L'homme 2.0 a survécu à l'attaque des machines grâce à sa compréhension et maîtrise des langages informatiques.
-                Il réussit à soumettre les machines et en faire ses serviteurs. La première phrase qu'il apprit au robot fut :
-            </p>
-        
-        <blockquote class="quote">
-            "caaavvvaaaa, t'inquiète frérot."
-        </blockquote>
-    </div>
-    </article>
-</section>
 
+    <main>
+
+        <div class="container">
+            <!-- Elément carrousel -->
+            <div class="carousel">
+                <!-- Conteneur interne pour les slides -->
+                <div class="carousel-inner">
+                    <div class="slide">
+                        <button id="prehistoire">Préhistoire</button>
+                    </div>
+                    <div class="slide">
+                        <button id="bronze">Age du bronze</button>
+                    </div>
+                    <div class="slide">
+                        <button id="fer">Age du fer</button>
+                    </div>
+                    <div class="slide">
+                        <button id="antique">Antiquité</button>
+                    </div>
+                    <div class="slide">
+                        <button id="moyenAge">Moyen âge</button>
+                    </div>
+                    <div class="slide">
+                        <button id="moderne">Epoque moderne</button>
+                    </div>
+                    <div class="slide">
+                        <button id="contemporain">Epoque contemporaine</button>
+                    </div>
+                </div>
+                <!-- Conteneur pour les boutons de navigation -->
+                <div class="carousel-controls">
+                    <!-- bouton previous -->
+                    <button id="prev"></button>
+                    <!-- bouton next -->
+                    <button id="next"></button>
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="navBis">
+                <div class="navbary">
+                    <button class="slidesY" id="prehistoire1">Préhistoire</button>
+                    <button class="slidesY" id="bronze1">Age du bronze</button> 
+                    <button class="slidesY" id="fer1">Age du fer</button> 
+                    <button class="slidesY" id="antique1">Antiquité</button>
+                    <button class="slidesY" id="moyenAge1">Moyen âge</button>
+                    <button class="slidesY" id="moderne1">Epoque moderne</button>
+                    <button class="slidesY" id="contemporain1">Epoque contemporaine</button>
+                </div>
+            </div>
+      
+        <section class="cards">
+            <div id="zoneCartes">
+            </div>
+        </section> 
+    
+    </main>
+</div>    
+    <footer>
+        <p>&copy; 2024 Wilders ( Dragon Crew). All rights reserved.</p>
+    </footer>
+    <script src="main.js" defer></script>
 
 </body>
 </html>
