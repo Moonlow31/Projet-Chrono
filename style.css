@@ -19,20 +19,22 @@ body {
 }
 
 header {
-    background-image: url(assets/light\ speed.jpg);
+    background-image: url(assets/time-travel-2910934_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 450px;
 }
 
 header h1 {
+   
    font-family: "star_jedi";
    display: flex;
    justify-content: center;
    text-align: center;
-   color: #F1F200;
-   padding: 50px;
+   color: rgba(66, 24, 24, 0.79);
+   padding: 150px;
+   text-shadow: #FC0 1px 0 10px;
 }
 
 button {
@@ -109,7 +111,7 @@ button {
     position: absolute;
 }
 
-.navbary {
+.cards {
     display: flex;
     flex-direction: column;
 }
