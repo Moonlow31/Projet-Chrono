@@ -15,9 +15,23 @@
 }
 
 body {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
     position: relative;
     height: 2500px;
+
 }
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 
 header {
     background-image: url(assets/time-travel-2910934_1280.jpg);
@@ -36,6 +50,10 @@ header h1 {
     color: rgba(66, 24, 24, 0.79);
     padding: 150px;
     text-shadow: #FC0 1px 0 10px;
+}
+
+.content {
+    flex-grow: 1;
 }
 
 button {
@@ -74,6 +92,7 @@ button {
     width: 100%;
     height: 60px;
     object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -111,16 +130,19 @@ button {
     background-size: cover;
 }
 
-.navBis {
-    position: absolute;
-}
 
-.navbary {
+
+
+.cards {
     display: flex;
     flex-direction: column;
 }
 
-.slidesY {}
+.navBis {
+    display: grid;
+    grid-template-rows: repeat(7* 1fr);
+}
+
 
 /* case des nav*/
 #prehistoire {
@@ -131,6 +153,7 @@ button {
     font-family: "star_jedi";
     background: linear-gradient(73deg, rgba(227, 156, 27, 1) 0%, rgba(240, 120, 0, 1) 100%);
     font-size: 1rem;
+    transform: rotate(-180deg);
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -211,6 +234,8 @@ button {
     flex-direction: column;
     align-items: end;
     margin-right: 35px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .card-container {
@@ -264,10 +289,137 @@ footer {
     font-family: "radjhani";
     background: linear-gradient(73deg, rgba(240, 120, 0, 1) 0%, rgba(157, 255, 0, 1) 100%);
     color: black;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    height: 50px;
-    bottom: 0;
+}
+
+.containerr {
+    min-height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+    }
+
+    .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+    }
+
+    .timeline ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+
+    .timeline ul li:hover::before {
+        background-color: aqua;
+    }
+
+    .timeline img {
+        width: 35rem;
+    }
+
+    .timeline :nth-child(odd) .friseImage {
+        float: right;
+        clear: left;
+        transform: translateX(40rem);
+    }
+
+    .timeline :nth-child(even) .friseImage {
+        float: left;
+        clear: right;
+        transform: translateX(-40rem);
+    }
 }

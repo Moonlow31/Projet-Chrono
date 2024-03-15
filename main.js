@@ -1,3 +1,4 @@
+
 (function () {
 
     const prev = document.querySelector('#prev');
@@ -130,7 +131,7 @@ arrayCard.forEach(cardInfo => {
 /*click caroussel-card*/
 const carouselItems = document.querySelectorAll('.container .carousel .slide');
 
-// Sélectionnez le premier élément de la carrousel pour l'afficher par défaut
+
 document.querySelector('.card-container').style.display = 'block';
 
 carouselItems.forEach((item, index) => {
