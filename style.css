@@ -16,6 +16,7 @@
 
 body {
     position: relative;
+    height: 2500px;
 }
 
 header {
@@ -117,8 +118,7 @@ button {
 }
 
 .slidesY {
-    height: 500px;
-    width: calc(100% / 3);
+
 }
 
 /* case des nav*/
@@ -185,7 +185,7 @@ button {
 
 .card-img { 
   background-color: aliceblue;
-  width: 200px;;
+  width: 200px;
     height: 200px;
   border-radius: 0.65rem;
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
