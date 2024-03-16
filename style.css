@@ -200,7 +200,77 @@ button {
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   margin-bottom: 30px;
 } 
+.cards h2 {
+  padding-top: 50px;
+  padding-right: 10px;
+  text-align: center;
+  float: left;
+  font-family: "star_jedi";
+  font-size: 1.5rem;
+  color: black;
+  width: 50%;
+}
+
+.description {
+  font-family: "radjhani";
+  padding: 2rem;
+  font-size: 1.45rem;
+  font-weight: 400;
+  box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
+  border-radius: 10px;
+}
+
+.quote {
+  font-family: "rajdhani";
+  padding: 2rem;
+  font-style: italic;
+  font-size:1.35rem;
+}
 /*frise*/
+
+.frise {
+    display: flex;
+    padding: 35px ; }
+
+ 
+  .timeline {
+   width: 50%;
+    margin: 0 auto;
+    position: relative;
+  list-style: none;
+    
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    display: flex;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);
+     box-shadow: 30px 18px 17px 0px #B1AFAF;
+    border: 0.15rem solid #B1AFAF;
+    
+  }
+  .friseImage{ 
+  
+     border-radius: 0.65rem;
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+   }
+
+  .timeline-content h2 {
+    color: #000000;
+    font-family: "star_jedi";
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+ ;
+  }
+  .timeline-content p {
+    font-family: "radjhani";
+
 .frises {
     min-height: 100vh;
     width: 100%;
@@ -267,19 +337,20 @@ h2 {
 
 .description {
   font-family: "radjhani";
+
   padding: 2rem;
   font-size: 1.45rem;
   font-weight: 400;
   box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
   border-radius: 10px;
-}
+    width: 55%;
+    color: #000000;
 
-.quote {
-  font-family: "rajdhani";
-  padding: 2rem;
-  font-style: italic;
-  font-size:1.35rem;
-}
+  }
+ 
+
+/**/
+
 /*footer*/
 
 footer {
