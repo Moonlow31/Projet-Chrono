@@ -17,7 +17,7 @@
 //function strings creation de carte//
 function card(img, title, desc, quote,startcolor, endcolor) {
     const newCard = `
-    <article class="card-container"style="background: linear-gradient(73deg, ${startcolor}, ${endcolor});">
+    <article class="card-container"style="background: linear-gradient(73deg), ${startcolor}, ${endcolor});">
         <img src="${img}" class="card-img" alt="${title}">
         <h2>${title}</h2>
         <div class="description"> 
@@ -92,9 +92,26 @@ arrayCard.forEach(cardInfo => {
 
 });
 
+const carouselItems = document.querySelectorAll('.container .carousel .slide');
+document.querySelector('.card-container').style.display = 'block';
+
+carouselItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+       
+        document.querySelectorAll('.card-container').forEach(card => {
+            card.style.display = 'none';
+        });
+        
+        document.querySelectorAll('.card-container')[index].style.display = 'block';
+    });
+});
 
 
-/*click caroussel-card*/
+document.querySelectorAll('.card-container').forEach(card => {
+    card.style.display = 'none';
+});
+
+
 (function () {
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
@@ -113,29 +130,5 @@ arrayCard.forEach(cardInfo => {
     // Ajout d'un écouteur d'événement "click" sur le bouton "next" pour afficher le slide suivant
     next.addEventListener('click', () => slideTo(++currentSlide));
 })();
-
-/*click caroussel-card*/
-const carouselItems = document.querySelectorAll('.container .carousel .slide');
-
-
-document.querySelector('.card-container').style.display = 'block';
-
-carouselItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-       
-        document.querySelectorAll('.card-container').forEach(card => {
-            card.style.display = 'none';
-        });
-
-        
-        document.querySelectorAll('.card-container')[index].style.display = 'block';
-    });
-});
-
-
-document.querySelectorAll('.card-container').forEach(card => {
-    card.style.display = 'none';
-});
-
 
 
