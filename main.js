@@ -1,3 +1,4 @@
+//foncyion
 (function () {
 
     const prev = document.querySelector('#prev');
@@ -13,7 +14,7 @@
     prev.addEventListener('click', () => slideTo(--currentSlide));
     next.addEventListener('click', () => slideTo(++currentSlide));
 })();
-
+//function strings creation de carte//
 function card(img, title, desc, quote,startcolor, endcolor) {
     const newCard = `
     <article class="card-container"style="background: linear-gradient(73deg, ${startcolor}, ${endcolor});">
@@ -35,7 +36,7 @@ function card(img, title, desc, quote,startcolor, endcolor) {
 
 const cards = document.querySelector(".cards");
 
-// tableau+fonction creéation de carte
+// tableau=creéation de carte//
 const arrayCard =[
     
     /*card1*prehistoire*/
@@ -135,3 +136,6 @@ carouselItems.forEach((item, index) => {
 document.querySelectorAll('.card-container').forEach(card => {
     card.style.display = 'none';
 });
+
+
+
