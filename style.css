@@ -1,143 +1,125 @@
 @font-face {
-    font-family: "star_jedi";
-    src: url("./assets/star_jedi/starjedi/Starjedi.ttf");
+  font-family: "star_jedi";
+  src: url("./assets/star_jedi/starjedi/Starjedi.ttf");
 }
 
 @font-face {
-    font-family: "radjhani";
-    src: url("./assets/Rajdhani/Rajdhani-Medium.ttf");
+  font-family: "radjhani";
+  src: url("./assets/Rajdhani/Rajdhani-Medium.ttf");
 }
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
 
-    display :flex;
-    flex-direction: column;
-	width: 100%;
+  display :flex;
+  flex-direction: column;
+width: 100%;
 
-    position: relative;
-    height: 2500px;
+  position: relative;
+  height: 2500px;
 
 }
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 
 header {
-    background-image: url(assets/time-travel-2910934_1280.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
+  background-image: url(assets/time-travel-2910934_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
 }
 
 header h1 {
-   
-   font-family: "star_jedi";
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   color: rgba(66, 24, 24, 0.79);
-   padding: 150px;
-   text-shadow: #FC0 1px 0 10px;
+ 
+ font-family: "star_jedi";
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ color: rgba(66, 24, 24, 0.79);
+ padding: 150px;
+ text-shadow: #FC0 1px 0 10px;
 }
 
 button {
-    font-family: "star_jedi";
-    font-size: 1rem;
+  font-family: "star_jedi";
+  font-size: 1rem;
 }
 
 .container {
-    overflow: hidden;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 5;;
+  overflow: hidden;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 5;;
 }
- 
+
 .carousel {
-    position: relative;
+  position: relative;
 }
 
 .carousel-inner {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 
 
 .slide {
-    flex: 0 0 calc(100% / 3);
-    height: 100%;
-    transition: 0.5s ease-in-out;
+  flex: 0 0 calc(100% / 3);
+  height: 100%;
+  transition: 0.5s ease-in-out;
 }
 
 
 .slide button {
-    width: 100%;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
 }
 
 
 .carousel-controls {
-    position: absolute;
-    z-index: 5;
-    left: 10px;
-    right: 10px;
-    top: 18px;
-    display: flex;
-    justify-content: space-between;
+  position: absolute;
+  z-index: 5;
+  left: 10px;
+  right: 10px;
+  top: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
 .carousel-controls button {
-    padding: 10px;  
+  padding: 10px;  
 }
 
 #next {
-    border:none;
-    width:1.5rem ;
-    background-repeat: no-repeat;
-    background: rgb(0,0,0, 0%);
-    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
+  border:none;
+  width:1.5rem ;
+  background-repeat: no-repeat;
+  background: rgb(0,0,0, 0%);
+  background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
 }
 
 #prev {
-    border:none;
-    width:1.5rem ;
-    transform: rotate(180deg);
-    background-repeat: no-repeat;
-    background: rgb(0,0,0, 0%);
-    background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
+  border:none;
+  width:1.5rem ;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background: rgb(0,0,0, 0%);
+  background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
 }
-
-
-.cards {
-    display: flex;
-    flex-direction: column;
-}
-  
-
-/* case des nav*/
-#prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
-
-
-#bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
-
-
-#fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
-
-
 
 /* case des nav*/
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
@@ -150,23 +132,18 @@ button {
 
 #moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
 
-
-
 #moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
-
-
-
 
 #contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
 
 .cards {position: absolute;
-  display: flex;
-  flex-direction:column;
-  align-items: end; 
-  margin-right: 35px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  z-index: 1;
+display: flex;
+flex-direction:column;
+align-items: end; 
+margin-right: 35px;
+margin-top: 35px;
+margin-bottom: 35px;
+z-index: 1;
 }
 
 .card-container {
@@ -181,7 +158,7 @@ border: 0.15rem solid #B1AFAF;
 .card-img { 
 background-color: aliceblue;
 width: 200px;
-  height: 200px;
+height: 200px;
 border-radius: 0.65rem;
 box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 margin-bottom: 30px;
@@ -207,95 +184,89 @@ border-radius: 10px;
 }
 
 .quote {
-
-  font-family: "rajdhani";
-  padding: 2rem;
-  font-style: italic;
-  font-size:1.35rem;
+font-family: "rajdhani";
+padding: 2rem;
+font-style: italic;
+font-size:1.35rem;
 }
-/*frise*/
-
-
-
 
 /**/
 
 /*footer*/
 
 footer {
-    font-family: "radjhani";
-    background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
-    color: black;
+  font-family: "radjhani";
+  background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
+  color: black;
 }
 
 
 
-  
-  @media only screen and (min-width: 768px) {
-    .timeline:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 2px;
-      height: 100%;
-      background-color: gray;
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+
+    .timeline img {
+      width:35rem;
     }
-    .timeline ul li {
-      width: 50%;
-      position: relative;
-      margin-bottom: 50px;
-    }
-    .timeline ul li:nth-child(odd) {
-      float: left;
-      clear: right;
-      transform: translateX(-30px);
-      border-radius: 20px 0px 20px 20px;
-    }
-    .timeline ul li:nth-child(even) {
+    .timeline :nth-child(odd) .friseImage{
       float: right;
       clear: left;
-      transform: translateX(30px);
-      border-radius: 0px 20px 20px 20px;
+      transform: translateX(40rem);
     }
-    .timeline ul li::before {
-      content: "";
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background-color: gray;
-      top: 0px;
+    .timeline :nth-child(even) .friseImage{
+      float: left;
+      clear: right;
+      transform: translateX(-40rem);
     }
-    .timeline ul li:nth-child(odd)::before {
-      transform: translate(50%, -50%);
-      right: -30px;
-    }
-    .timeline ul li:nth-child(even)::before {
-      transform: translate(-50%, -50%);
-      left: -30px;
-    }
-    .timeline-content .date {
-      position: absolute;
-      top: -30px;
-    }
-    .timeline ul li:hover::before {
-      background-color: aqua;
-    }
-  
-      .timeline img {
-        width:35rem;
-      }
-      .timeline :nth-child(odd) .friseImage{
-        float: right;
-        clear: left;
-        transform: translateX(40rem);
-      }
-      .timeline :nth-child(even) .friseImage{
-        float: left;
-        clear: right;
-        transform: translateX(-40rem);
-      }
-  }
-  
+}
