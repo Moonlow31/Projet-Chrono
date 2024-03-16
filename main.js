@@ -140,6 +140,7 @@ document.querySelectorAll('.card-container').forEach(card => {
 
 
 
+
 //function strings creation de lignes de frise
 function frise(img, title, desc, startcolor, endcolor) {
     const newLine = `
@@ -203,4 +204,3 @@ const arrayLines =[
     arrayLines.forEach(lineInfo => {
         lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
     });
-
