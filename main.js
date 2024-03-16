@@ -118,8 +118,8 @@ document.querySelectorAll('.card-container').forEach(card => {
 //function strings creation de lignes de frise
 function frise(img, title, desc, startcolor, endcolor) {
     const newLine = `
-    <li>
-        <article class="timeline-content" style="background: linear-gradient(73deg),${startcolor},${endcolor};">
+    <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
+        <article class="timeline-content">
             <h2>${title}</h2>
             <p>${desc}</p>
             <img class ="friseImage" src=${img} alt=${title}>
@@ -157,10 +157,11 @@ const arrayLines =[
     desc:"L'Antiquité, c'était un peu comme la première saison d'une série à succès : des dieux en toge qui régnaient depuis l'Olympe, des empereurs qui se prenaient pour des divinités, et des guerres pour conquérir des territoires qui faisaient plus de bruit qu'une dispute de voisins pour une haie mal taillée. Les gens s'entassaient dans des arènes pour regarder des gladiateurs se battre en espérant que ça finisse mieux que leurs propres querelles de famille. Les philosophes se prenaient tellement au sérieux qu'ils passaient plus de temps à réfléchir à la signification de la vie qu'à la vivre. Et n'oublions pas les Romains, qui ont construit des routes si droites qu'elles rendaient jaloux même les conducteurs les plus pointilleux de nos jours. En bref, l'Antiquité était un mix entre Game of Thrones et The Real Housewives, avec une dose de sagesse et beaucoup de vin.",
     startcolor:"rgba(224,194,94,1)0%",
     endcolor:"rgba(224,203,29,1) 100%"},
-    //line5 moyenage 
+    //line5 moyen age 
     {src:"/assets/imageCard/moyenage.jpg",
     title:"Le Moyen age",
     desc:"L'homme du Moyen Âge, tel un chevalier sans son destrier, naviguait entre des châteaux aussi nombreux que les boulangeries de nos jours. Avec ses armures épaisses, il se préparait pour des batailles qui semblaient parfois plus proches de tournois de pelote que de guerres. Son quotidien était rythmé par les claquements de sabots sur les pavés, les troubadours en quête d'auditoire et les odeurs envoûtantes de fumée et de boue. Entre deux affrontements, il trouvait refuge dans des tavernes aux noms aussi colorés que leurs boissons, échangeant des histoires aussi exagérées que ses épées. Dans ce monde de seigneurs et de serfs, l'homme médiéval jonglait entre honneur et humour, souvent avec un clin d'œil malicieux.",
+    startcolor:"rgba(224,203,29,1) 0%",
     endcolor:"rgba(223,230,37,1) 100%"},
     //line6 l'homme moderne
     {src:"/assets/imageCard/modernmen.jpg",
