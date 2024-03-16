@@ -126,11 +126,6 @@ button {
     flex-direction: column;}
     .slideY{width:calc(100%/3);
         height: 250px;}
-.cards {
-    display: flex;
-    flex-direction: column;
-}
-  
 
 /* case des nav*/
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
@@ -206,60 +201,59 @@ button {
   margin-bottom: 30px;
 } 
 /*frise*/
-.containerr {
+.frises {
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items:flex-start;
     justify-content:flex-start;
     padding: 100px 0;
+}
 
-  }
-
- 
-  .timeline {
-    width: 80%;
-    height: auto;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
   list-style: none;
-    ;
-  }
+}
   
-  .timeline ul {
-    list-style: none;
-  }
-  .timeline ul li {
-    padding: 20px;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)
-  }
-  .timeline ul li:last-child {
-    margin-bottom: 0;
-  }
-  .timeline-content h2 {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    margin-bottom: 10px;
-  }
-  .timeline-content p {
-    
-    font-family: "radjhani";
-    font-size: 16px;
-  
-  }
-  .timeline-content .date {
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-  }
+.timeline ul {
+  list-style: none;
+}
 
-/**/
+.timeline ul li {
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content h2 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-family: "radjhani";
+  font-size: 16px;
+}
+
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
 h2 {
   padding-top: 50px;
   padding-right: 10px;
