@@ -49,7 +49,7 @@ const arrayCard =[
 //card1 prehistoire
 {src:"/assets/imageCard/prehistoricmen.jpg", 
 title:"l'Homme préhistorique",
-desc:"Les hommes préhistoriques étaient les premiers membres de la lignée humaine, vivant avant l'avènement de l'écriture. Leur mode de vie était principalement nomade, cherchant constamment de la nourriture, de l'eau et un abri. Ils ont développé des compétences de chasse, de cueillette et de fabrication d'outils en pierre. Ces ancêtres ont également maîtrisé le feu, un tournant majeur dans leur évolution. Leur culture artistique, illustrée par des peintures rupestres et des sculptures, témoigne de leur créativité et de leur capacité à communiquer. Les hommes préhistoriques ont coexisté avec d'autres espèces humaines, telles que les Néandertaliens et les Homo erectus. Leurs découvertes archéologiques révèlent une adaptabilité remarquable à divers environnements. La génétique et l'anthropologie nous aident à reconstruire leur histoire et leur évolution. Ces premiers humains ont pavé la voie à notre développement en tant qu'espèce moderne. Nous continuons à apprendre de leur passé pour mieux comprendre notre présent et notre avenir.", 
+desc:"L'homme préhistorique, ou devrais-je dire l'homme des cavernes, était un véritable modèle de mode avec sa tenue en peau de bête. Imaginez-le, avec son air sérieux et sa barbe sauvage, il devait ressembler à un croisement entre Tarzan et Chewbacca ! Mais ne vous laissez pas tromper par son allure rustique, car il avait certainement un sens de l'humour très primitif. Peut-être qu'il se moquait des mammouths en imitant leurs grognements ou qu'il inventait des danses de célébration ridicules après une chasse réussie. On peut imaginer qu'il avait des blagues simples mais efficaces, peut-être des jeux de mots sur les rochers ou des jeux de mime pour raconter des histoires. En fin de compte, malgré toutes ses différences avec nous, je parie qu'il aurait trouvé quelque chose de hilarant dans notre monde moderne avec toutes ses bizarreries technologiques et sociales.", 
 quote:"Les premiers hommes qui ont habité la terre étaient bien à plaindre; ils étaient presque nus, ils n'avaient pas d'outils et ils devaient se défendre contre les bêtes féroces. - Voltaire",
 startcolor:"rgba(240,120,0,1) 0%",
 endcolor:"rgba(227,156,27,1) 100%"},
@@ -134,12 +134,12 @@ closeButton.forEach(button => {
 });
 //function strings creation de lignes de frise
 function frise(img, title, desc, startcolor, endcolor) {
-    const newLine = `
+    const newLine = `<img src=${img} class ="friseImage" alt=${title}> 
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
         <article class="timeline-content"> 
             <h2>${title}</h2>
             <p>${desc}</p>
-           <img src=${img} class ="friseImage" alt=${title}>
+          
         </article>
     </li> 
     `
