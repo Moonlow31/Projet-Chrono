@@ -15,7 +15,7 @@
 }
 
 body {
-
+background-color: antiquewhite;
   display :flex;
   flex-direction: column;
 width: 100%;
@@ -29,7 +29,7 @@ body, html {
   padding: 0;
   height: 100%;
 }
-
+/*header*/
 header {
   background-image: url(assets/time-travel-2910934_1280.jpg);
   background-position: center;
@@ -48,7 +48,7 @@ header h1 {
  padding: 150px;
  text-shadow: #FC0 1px 0 10px;
 }
-
+/* caroussel*/
 button {
   font-family: "star_jedi";
   font-size: 1rem;
@@ -131,6 +131,8 @@ button {
 
 #contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
 
+/*cards*/
+
 .cards {
 display: flex;
 flex-direction:column;
@@ -189,9 +191,6 @@ font-size:1.35rem;
 
 /*frise*/
 
-
-
-
    .timeline {padding-top: 35px;
     width: 65%;
     padding-left: 35px;
@@ -200,6 +199,7 @@ font-size:1.35rem;
 .timeline img {
   width: 160%;
 }
+
 .timeline :nth-child(odd) .friseImage{
   float: right;
   clear: left;
@@ -207,6 +207,7 @@ font-size:1.35rem;
   position: relative;
   bottom: 800px;;
 }
+
 .timeline :nth-child(even) .friseImage{
   float: left;
   clear: right;
@@ -219,9 +220,11 @@ font-size:1.35rem;
   border-radius: 10px;
   margin-bottom: 20px; 
  width: 40%;
+ height: 100%;
     margin-bottom: 50px;
     list-style: none;
   }
+  
   .timeline ul li:last-child {
     margin-bottom: 0;}
   
@@ -262,5 +265,7 @@ footer {
 
  
 
+
+ 
 
  
