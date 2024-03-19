@@ -110,20 +110,6 @@ button {
     background-image: url(/assets/arrow/arrow\ right.png);background-size: cover;
 }
 
-/* case des nav*/
-#prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
-
-#bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
-
-#fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
-
-#antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
-
-#moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
-
-#moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
-
-#contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
 
 /*cards*/
 
