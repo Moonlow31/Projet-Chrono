@@ -1,21 +1,4 @@
-/*caroussel*/
-(function () {
-    const prev = document.querySelector('#prev');
-    const next = document.querySelector('#next');
-    const $slides = document.querySelectorAll('.slide');
-    // Initialisation du slide courant à 0
-    let currentSlide = 0;
-    // Fonction pour afficher un slide spécifique en utilisant un index
-    function slideTo(index) {
-        // Vérifie si l'index est valide (compris entre 0 et le nombre de slides - 1)
-        currentSlide = index >= 5 || index < 1 ? 0 : index;
-        // Boucle sur tous les éléments de type "slide" pour les déplacer
-        $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
-    }
-    // Ajout d'un écouteur d'événement "click" sur le bouton "next" et "prev" pour faire défiler les slides
-    prev.addEventListener('click', () => slideTo(--currentSlide));
-    next.addEventListener('click', () => slideTo(++currentSlide));
-})();
+
 
 //function strings creation de carte//
 function card(img, title, desc, quote, startcolor, endcolor) {
@@ -97,7 +80,7 @@ arrayCard.forEach(cardInfo => {
 });
 
 //click caroussel-card
-const carouselItems = document.querySelectorAll('.container .carousel .slide');
+const carouselItems = document.querySelectorAll('.slide');
 
 
 document.querySelector('.card-container').style.display = 'block';
@@ -125,11 +108,8 @@ function frise(img, title, desc, startcolor, endcolor) {
             <h2>${title}</h2>
             <p>${desc}</p>
            <img src=${img} class ="friseImage" alt=${title}>
-        </article>  
-       
+        </article>
     </li> 
-   
-  
     `
     return newLine;
 };
@@ -184,3 +164,74 @@ const arrayLines =[
 arrayLines.forEach(lineInfo => {
         lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
     });
+
+//function strings creation de slide carrousel//
+function slide(title, startcolor, endcolor) {
+    const newSlide = `
+        <button class="slides" style="background: linear-gradient(73deg,${startcolor},${endcolor})">${title}</button>
+    `
+    return newSlide;
+}
+
+const slides = document.querySelector(".slide");
+
+// tableau création de slide de carrousel
+const arraySlide =[    
+    //slide1 Préhistoire
+    {
+    title:"Préhistoire",
+    startcolor:"rgba(240,120,0,1) 0%",
+    endcolor:"rgba(227,156,27,1) 100%"},
+    //slide2 Age du bronze
+    {
+    title:"Age du bronze",
+    startcolor:"rgba(227,156,27,1) 0%",
+    endcolor:" rgba(224,179,29,1)"},
+    //slide3 Age du fer
+    {
+    title:"Age du fer",
+    startcolor:"rgba(224,179,29,1)0%",
+    endcolor:"rgba(224,194,94,1) 100%"},
+    //slide4 Antiquité 
+    {
+    title:"Antiquité",
+    startcolor:"rgba(224,194,94,1)0%",
+    endcolor:"rgba(224,203,29,1) 100%"},
+    //slide5 Moyen Age 
+    {
+    title:"Moyen Age",
+    startcolor:"rgba(224,203,29,1) 0%",
+    endcolor:"rgba(223,230,37,1) 100%"},
+    //slide6 l'homme moderne
+    {
+    title:"Moderne", 
+    startcolor:"rgba(223,230,37,1) 0%",
+    endcolor:"  rgba(241,242,0,1) 100%"},
+    //slide7 l'homme 2.0
+    { 
+    title:"Contemporain",
+    startcolor:" rgba(241,242,0,1) 0%",
+    endcolor:" rgba(157,255,0,1) 100%"}];
+    
+    arraySlide.forEach(slideInfo => {
+        slides.innerHTML += slide(slideInfo.title, slideInfo.startcolor, slideInfo.endcolor);
+    });
+
+    /*caroussel*/
+(function () {
+    const prev = document.querySelector('#prev');
+    const next = document.querySelector('#next');
+    const $slides = document.querySelectorAll('.slides');
+    // Initialisation du slide courant à 0
+    let currentSlide = 0;
+    // Fonction pour afficher un slide spécifique en utilisant un index
+    function slideTo(index) {
+        // Vérifie si l'index est valide (compris entre 0 et le nombre de slides - 1)
+        currentSlide = index >= 5 || index < 1 ? 0 : index;
+        // Boucle sur tous les éléments de type "slide" pour les déplacer
+        $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
+    }
+    // Ajout d'un écouteur d'événement "click" sur le bouton "next" et "prev" pour faire défiler les slides
+    prev.addEventListener('click', () => slideTo(--currentSlide));
+    next.addEventListener('click', () => slideTo(++currentSlide));
+})();
