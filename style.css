@@ -1,64 +1,57 @@
 @font-face {
-    font-family: "star_jedi";
-    src: url("./assets/star_jedi/starjedi/Starjedi.ttf");
+  font-family: "star_jedi";
+  src: url("./assets/star_jedi/starjedi/Starjedi.ttf");
 }
 
 @font-face {
-    font-family: "radjhani";
-    src: url("./assets/Rajdhani/Rajdhani-Medium.ttf");
+  font-family: "radjhani";
+  src: url("./assets/Rajdhani/Rajdhani-Medium.ttf");
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display :flex;
+  flex-direction: column;
+width: 100%;
 
-    position: relative;
-    height: 2500px;
+  position: relative;
+  height: 2500px;
 
 }
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-
 
 header {
-    background-image: url(assets/time-travel-2910934_1280.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
+  background-image: url(assets/time-travel-2910934_1280.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
 }
 
 header h1 {
-
-    font-family: "star_jedi";
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: rgba(66, 24, 24, 0.79);
-    padding: 150px;
-    text-shadow: #FC0 1px 0 10px;
-}
-
-.content {
-    flex-grow: 1;
+ 
+ font-family: "star_jedi";
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ color: rgba(66, 24, 24, 0.79);
+ padding: 150px;
+ text-shadow: #FC0 1px 0 10px;
 }
 
 button {
-    font-family: "star_jedi";
-    font-size: 1rem;
+  font-family: "star_jedi";
+  font-size: 1rem;
 }
 
 .container {
@@ -67,53 +60,36 @@ button {
     width: 100%;
     top: 0;
     z-index: 5;
-    ;
 }
 
 .carousel {
-    position: relative;
+  position: relative;
 }
-
-.carousel-inner {
-    display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
-}
-
 
 .slide {
-    flex: 0 0 calc(100% / 3);
-    height: 100%;
-    transition: 0.5s ease-in-out;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  height: 100%;
 }
 
-
-.slide button {
-    width: 100%;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 10px 10px 10px 10px;
-}
-
-
-.carousel-controls {
-    position: absolute;
-    z-index: 5;
-    left: 10px;
-    right: 10px;
-    top: 18px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.carousel-controls button {
-    padding: 10px;
+.slides {
+  flex: 0 0 calc(100% / 3);
+  transition: 0.5s ease-in-out;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #next {
-    border: none;
-    width: 1.5rem;
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    right: 12px;
     background-repeat: no-repeat;
     background: rgb(0, 0, 0, 0%);
     background-image: url(/assets/arrow/arrow\ right.png);
@@ -121,8 +97,14 @@ button {
 }
 
 #prev {
-    border: none;
-    width: 1.5rem;
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    left: 12px;
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background: rgb(0, 0, 0, 0%);
@@ -130,296 +112,136 @@ button {
     background-size: cover;
 }
 
-
-
-
 .cards {
-    display: flex;
-    flex-direction: column;
-}
+display: flex;
+flex-direction:column;
+align-items: end; 
+margin-right: 35px;
+margin-top: 35px;
+margin-bottom: 35px;
+position:absolute;
+z-index: 4;
 
-.navBis {
-    display: grid;
-    grid-template-rows: repeat(7* 1fr);
-}
-
-
-/* case des nav*/
-#prehistoire {
-    background: linear-gradient(73deg, rgba(240, 120, 0, 1) 0%, rgba(227, 156, 27, 1) 100%)
-}
-
-#prehistoire1 {
-    font-family: "star_jedi";
-    background: linear-gradient(73deg, rgba(227, 156, 27, 1) 0%, rgba(240, 120, 0, 1) 100%);
-    font-size: 1rem;
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-#bronze {
-    background: linear-gradient(73deg, rgba(227, 156, 27, 1) 0%, rgba(224, 179, 29, 1) 100%);
-}
-
-#bronze1 {
-    background: linear-gradient(73deg, rgba(224, 179, 29, 1)0%, rgba(227, 156, 27, 1) 100%);
-    font-size: 1rem;
-    font-family: "star_jedi";
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-#fer {
-    background: linear-gradient(73deg, rgba(224, 179, 29, 1) 0%, rgba(224, 194, 94, 1) 100%);
-}
-
-#fer1 {
-    background: linear-gradient(73deg, rgba(224, 194, 94, 1) 0%, rgba(224, 179, 29, 1) 0% 100%);
-    font-size: 1rem;
-    font-family: "star_jedi";
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-#antique {
-    background: linear-gradient(73deg, rgba(224, 194, 94, 1) 0%, rgba(224, 203, 29, 1) 100%);
-}
-
-#antique1 {
-    background: linear-gradient(73deg, rgba(224, 203, 29, 1)0%, rgba(224, 194, 94, 1) 100%);
-    font-size: 1rem;
-    font-family: "star_jedi";
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-#moyenAge {
-    background: linear-gradient(73deg, rgba(224, 203, 29, 1) 0%, rgba(223, 230, 37, 1) 100%);
-}
-
-#moyenAge1 {
-    background: linear-gradient(73deg, rgba(223, 230, 37, 1) 0%, rgba(224, 203, 29, 1) 100%);
-    font-size: 1rem;
-    font-family: "star_jedi";
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-#moderne {
-    background: linear-gradient(73deg, rgba(223, 230, 37, 1) 0%, rgba(241, 242, 0, 1) 100%);
-}
-
-#moderne1 {
-    background: linear-gradient(73deg, rgba(241, 242, 0, 1)0%, rgba(223, 230, 37, 1)100%);
-    font-size: 1rem;
-    font-family: "star_jedi";
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-#contemporain {
-    background: linear-gradient(73deg, rgba(241, 242, 0, 1) 0%, rgba(157, 255, 0, 1) 100%);
-}
-
-#contemporain1 {
-    background: linear-gradient(73deg, rgba(157, 255, 0, 1) 0%, rgba(241, 242, 0, 1)100%);
-    font-size: 1rem;
-    font-family: "star_jedi";
-    transform: rotate(-180deg);
-    border-radius: 10px 10px 10px 10px;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-right: 35px;
-    margin-top: 35px;
-    margin-bottom: 35px;
 }
 
 .card-container {
-    background: linear-gradient(90deg, rgba(240, 120, 0, 1) 0%, rgba(239, 124, 4, 1) 10%, rgb(216, 117, 11) 15%, rgba(229, 163, 43, 1) 100%);
-    padding: 2rem 1rem;
-    width: 30%;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 30px 18px 17px 0px #B1AFAF;
-    border: 0.15rem solid #B1AFAF;
+background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);
+padding: 2rem 1rem;
+width: 30%;
+border-radius:  10px 10px 10px 10px;
+box-shadow: 30px 18px 17px 0px #B1AFAF;
+border: 0.15rem solid #B1AFAF;
 }
 
-.card-img {
-    background-color: aliceblue;
-    width: 200px;
-    height: 200px;
-    border-radius: 0.65rem;
-    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    margin-bottom: 30px;
-}
-
-h2 {
-    padding-top: 50px;
-    padding-right: 10px;
-    text-align: center;
-    float: left;
-    font-family: "star_jedi";
-    font-size: 1.5rem;
-    color: black;
-    width: 50%;
+.card-img { 
+background-color: aliceblue;
+width: 200px;
+height: 200px;
+border-radius: 0.65rem;
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+margin-bottom: 30px;
+} 
+.cards h2 {
+padding-top: 50px;
+padding-right: 10px;
+text-align: center;
+float: left;
+font-family: "star_jedi";
+font-size: 1.5rem;
+color: black;
+width: 50%;
 }
 
 .description {
-    font-family: "radjhani";
-    padding: 2rem;
-    font-size: 1.45rem;
-    font-weight: 400;
-    box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    border-radius: 10px;
+font-family: "radjhani";
+padding: 2rem;
+font-size: 1.45rem;
+font-weight: 400;
+box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
+border-radius: 10px;
 }
 
 .quote {
-    font-family: "rajdhani";
-    padding: 2rem;
-    font-style: italic;
-    font-size: 1.35rem;
+font-family: "rajdhani";
+padding: 2rem;
+font-style: italic;
+font-size:1.35rem;
 }
 
-/*footer*/
+/*frise*/
 
-footer {
-    font-family: "radjhani";
-    background: linear-gradient(73deg, rgba(240, 120, 0, 1) 0%, rgba(157, 255, 0, 1) 100%);
-    color: black;
+
+
+
+   .timeline {padding-top: 35px;
+    width: 65%;
+    padding-left: 35px;
+   
 }
-
-.containerr {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
+.timeline img {
+  width: 160%;
 }
-
-.timeline {
-    width: 80%;
-    height: auto;
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+.timeline :nth-child(odd) .friseImage{
+  float: right;
+  clear: left;
+  transform: translateX(110%);
+  position: relative;
+  bottom: 800px;;
 }
-
-.timeline ul {
-    list-style: none;
+.timeline :nth-child(even) .friseImage{
+  float: left;
+  clear: right;
+  transform: translateX(-110%);
 }
 
 .timeline ul li {
-    padding: 20px;
-    background-color: #1e1f22;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
+ 
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; 
+ width: 40%;
+    margin-bottom: 50px;
+    list-style: none;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;}
+  
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    border-radius: 0px 20px 20px 20px;
+  }
+ 
+.timeline h2 {
+  font-family: "star_jedi";
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-bottom:50px ;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  width: 50%;}
+
+.timeline p  {font-family: "radjhani";padding: 2rem;
+  font-size: 1.45rem;
+  font-weight: 400;
+  box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
+  border-radius: 10px;
+;}
+
+/*footer*/
+footer {
+  font-family: "radjhani";
+  background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
+  color: black;
 }
 
-.timeline ul li:last-child {
-    margin-bottom: 0;
-}
-
-.timeline-content h1 {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    margin-bottom: 10px;
-}
-
-.timeline-content p {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 300;
-}
-
-.timeline-content .date {
-    font-size: 12px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
+ 
 
 
-
-@media only screen and (min-width: 768px) {
-    .timeline:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 2px;
-        height: 100%;
-        background-color: gray;
-    }
-
-    .timeline ul li {
-        width: 50%;
-        position: relative;
-        margin-bottom: 50px;
-    }
-
-    .timeline ul li:nth-child(odd) {
-        float: left;
-        clear: right;
-        transform: translateX(-30px);
-        border-radius: 20px 0px 20px 20px;
-    }
-
-    .timeline ul li:nth-child(even) {
-        float: right;
-        clear: left;
-        transform: translateX(30px);
-        border-radius: 0px 20px 20px 20px;
-    }
-
-    .timeline ul li::before {
-        content: "";
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: gray;
-        top: 0px;
-    }
-
-    .timeline ul li:nth-child(odd)::before {
-        transform: translate(50%, -50%);
-        right: -30px;
-    }
-
-    .timeline ul li:nth-child(even)::before {
-        transform: translate(-50%, -50%);
-        left: -30px;
-    }
-
-    .timeline-content .date {
-        position: absolute;
-        top: -30px;
-    }
-
-    .timeline ul li:hover::before {
-        background-color: aqua;
-    }
-
-    .timeline img {
-        width: 35rem;
-    }
-
-    .timeline :nth-child(odd) .friseImage {
-        float: right;
-        clear: left;
-        transform: translateX(40rem);
-    }
-
-    .timeline :nth-child(even) .friseImage {
-        float: left;
-        clear: right;
-        transform: translateX(-40rem);
-    }
-}
+ 
