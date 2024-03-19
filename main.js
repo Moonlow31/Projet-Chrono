@@ -1,9 +1,9 @@
 
 
 //function strings creation de carte//
-function card(img, title, desc, quote,startcolor, endcolor) {
+function card(img, title, desc, quote, startcolor, endcolor) {
     const newCard = `
-    <article class="card-container"style="background: linear-gradient(73deg), ${startcolor}, ${endcolor});">
+    <article class="card-container"style="background: linear-gradient(73deg, ${startcolor}, ${endcolor});">
         <img src="${img}" class="card-img" alt="${title}">
         <h2>${title}</h2>
         <div class="description"> 
@@ -58,8 +58,9 @@ title:"Le Moyen age",
 desc:"L'homme du Moyen Âge, tel un chevalier sans son destrier, naviguait entre des châteaux aussi nombreux que les boulangeries de nos jours. Avec ses armures épaisses, il se préparait pour des batailles qui semblaient parfois plus proches de tournois de pelote que de guerres. Son quotidien était rythmé par les claquements de sabots sur les pavés, les troubadours en quête d'auditoire et les odeurs envoûtantes de fumée et de boue. Entre deux affrontements, il trouvait refuge dans des tavernes aux noms aussi colorés que leurs boissons, échangeant des histoires aussi exagérées que ses épées. Dans ce monde de seigneurs et de serfs, l'homme médiéval jonglait entre honneur et humour, souvent avec un clin d'œil malicieux.",
 quote:"Dans les ombres du Moyen Âge, l'homme tisse sa destinée entre les fils de l'épée et les fils du savoir, jonglant entre les tourments de la guerre et les lueurs de la connaissance.",
 startcolor:" rgba(224,203,29,1) 0%",
-endcolor:"rgba(223,230,37,1) 100%"},
+endcolor:"rgba(223,230,37,1) 100%",},
 //card6 l'homme moderne
+
 {src:"/assets/imageCard/modernmen.jpg",
 title:"L'homme moderne", 
 desc:"L'homme moderne, habillé de ses jeans et de son café à emporter, jongle entre les notifications de son smartphone et les réunions ennuyeuses. Son habitat, un sanctuaire high-tech, ressemble plus à une salle de contrôle spatiale qu'à un simple foyer. Il se déplace dans des machines rugissantes, naviguant habilement entre les embouteillages urbains comme un pilote de course. Son régime alimentaire est un équilibre délicat entre fast-food et salades superfood, tentant de concilier plaisir et santé. Il communique davantage avec des emojis qu'avec des mots, réduisant parfois les conversations complexes à des LOLs et des GIFs. Malgré tout, l'homme moderne trouve toujours le temps de rire de lui-même et de ses péripéties dans ce monde numérique déconcertant.",
@@ -103,12 +104,12 @@ document.querySelectorAll('.card-container').forEach(card => {
 function frise(img, title, desc, startcolor, endcolor) {
     const newLine = `
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
-        <article class="timeline-content">
+        <article class="timeline-content"> 
             <h2>${title}</h2>
             <p>${desc}</p>
-            <img class ="friseImage" src=${img} alt=${title}>
-        </article
-    </li>
+           <img src=${img} class ="friseImage" alt=${title}>
+        </article>
+    </li> 
     `
     return newLine;
 };
@@ -160,7 +161,7 @@ const arrayLines =[
     startcolor:" rgba(241,242,0,1) 0%",
     endcolor:" rgba(157,255,0,1) 100%"}];
     
-    arrayLines.forEach(lineInfo => {
+arrayLines.forEach(lineInfo => {
         lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
     });
 
