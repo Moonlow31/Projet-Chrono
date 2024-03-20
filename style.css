@@ -49,6 +49,7 @@ button {
 }
 
 .container {
+
   overflow: hidden;
   position: sticky;
   width: 100%;
@@ -68,7 +69,7 @@ flex-wrap: nowrap;
 
 
 .slide {
-flex: 0 0 calc(100% / 3);
+flex: 0 0 calc(100%/3);
 height: 100%;
 transition: 0.5s ease-in-out;
 }
@@ -79,6 +80,7 @@ transition: 0.5s ease-in-out;
   height: 70px;
   object-fit: cover;
   border-radius: 10px 10px 10px 10px;
+  
 }
 
 #next {
@@ -113,20 +115,26 @@ transition: 0.5s ease-in-out;
 
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
 #prehistoire:hover{background: linear-gradient(73deg, rgba(240,120,70,1) 0%, rgba(227,156,97,1) 100%)}
+#prehistoire:hover{background: linear-gradient(73deg, rgba(240,120,70,1) 0%, rgba(227,156,97,1) 100%)}
 
 #bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
+#bronze:hover{ background: linear-gradient(73deg, rgba(227,156,97,1) 0%, rgba(224,179,99,1) 100%);}
 #bronze:hover{ background: linear-gradient(73deg, rgba(227,156,97,1) 0%, rgba(224,179,99,1) 100%);}
 
 #fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
 #fer:hover{ background: linear-gradient(73deg, rgba(224,179,99,1) 0%, rgba(224,194,164,1) 100%);}
+#fer:hover{ background: linear-gradient(73deg, rgba(224,179,99,1) 0%, rgba(224,194,164,1) 100%);}
 
 #antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
+#antique:hover{background: linear-gradient(73deg, rgba(224,194,164,1) 0%, rgba(224,203,99,1) 100%);}
 #antique:hover{background: linear-gradient(73deg, rgba(224,194,164,1) 0%, rgba(224,203,99,1) 100%);}
 
 #moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
 #moyenAge:hover{background: linear-gradient(73deg, rgba(224,203,99,1) 0%, rgba(223,230,107,1) 100%);}
+#moyenAge:hover{background: linear-gradient(73deg, rgba(224,203,99,1) 0%, rgba(223,230,107,1) 100%);}
 
 #moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
+#moderne:hover{background: linear-gradient(73deg, rgba(223,230,107,1) 0%, rgba(241,242,70,1) 100%);}
 #moderne:hover{background: linear-gradient(73deg, rgba(223,230,107,1) 0%, rgba(241,242,70,1) 100%);}
 
 #contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
@@ -146,6 +154,8 @@ z-index: 5;
 
 
 
+
+
 }
 
 .card-container {
@@ -159,7 +169,7 @@ border: 0.15rem solid #B1AFAF;
 
 .close-button{display: flex;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 1.5rem;
 font-weight: bold;
  text-align: center;
  border: none;
@@ -171,11 +181,11 @@ background-color: aliceblue;
 width: 200px;
 height: 150px;
 border-radius: 0.65rem;
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 margin-bottom: 10px;
 } 
 .cards h2 {
-padding-right: 10px;
+
 text-align: center;
 float: left;
 font-family: "star_jedi";
@@ -198,35 +208,35 @@ padding: 0.5rem;
 font-size:1rem;
 font-weight: bolder;
 font-style: italic;
+text-align: center;
 }
 
 /*frise*/
-
-   .timeline {padding-top: 35px;
-    width: 65%;
-    padding-left: 35px;
-    
-
-
-   
+.timeline {padding :-135px;
+  width: 65%;
+  padding-left: 35px;
 }
+
 .friseImage {
+ width: 55%;
  justify-content: center ;
-  width: 55%;
- 
+ width: 600px;
+ height: 600px;
+ box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.friseImage2 {
+  display: none;
 }
 
 .timeline :nth-child(odd) .friseImage{
   float: right;
   clear: left;
-  
-
 }
 
 .timeline :nth-child(even) .friseImage{
   float: left;
   clear: right;
-
 }
 
 .timeline ul li {
@@ -238,7 +248,11 @@ font-style: italic;
  height: 100%;
     margin-bottom: 50px;
     list-style: none;
-  }
+    box-shadow: -30px 18px 17px 0px #B1AFAF;
+    border: 0.15rem solid #B1AFAF;
+ display: flex;
+ flex-direction: column
+ ; }
   
   .timeline ul li:last-child {
     margin-bottom: 0;}
@@ -252,24 +266,30 @@ font-style: italic;
     border-radius: 0px 20px 20px 20px;
   }
  
-.timeline h2 {
+.timeline h2 {display: flex;
+justify-content: center;
+align-items: center;
   font-family: "star_jedi";
   padding-top: 50px;
-  padding-right: 10px;
   padding-bottom:50px ;
-  text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: black;
-  width: 50%;}
+  width: 50%;
+padding-left: 160px;
+
+
+}
 
 .timeline p  {font-family: "radjhani";padding: 2rem;
   font-size: 1.10rem;
   font-weight: 400;
-  box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
+  box-shadow: -5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
   border-radius: 10px;
 ;}
 
 /*footer*/
+
+
 footer {
   font-family: "radjhani";
   background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
