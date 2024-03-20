@@ -77,6 +77,35 @@ position: relative;
 }
 
 #next {
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    right: 12px;
+    background-repeat: no-repeat;
+    background: rgb(0, 0, 0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);
+    background-size: cover;
+}
+
+#prev {
+    cursor: pointer;
+    border:none;
+    position: absolute;
+    z-index: 5;
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    left: 12px;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background: rgb(0, 0, 0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);
+    background-size: cover;
+=======
   cursor: pointer;
   border:none;
   position: absolute;
@@ -161,13 +190,12 @@ border: 0.15rem solid #B1AFAF;
 }
 
 .card-img { 
-  background-color: aliceblue;
-  width: 200px;
-  height: 150px;
-  border-radius: 0.65rem;
-  box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-  margin-bottom: 10px;
-}
+width: 200px;
+height: 150px;
+border-radius: 0.65rem;
+box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+margin-bottom: 10px;
+} 
 
 .cards h2 {
   text-align: center;
@@ -208,10 +236,6 @@ border: 0.15rem solid #B1AFAF;
   width: 600px;
   height: 600px;
   box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.friseImage2 {
-  display: none;
 }
 
 .timeline :nth-child(odd) .friseImage{
@@ -280,48 +304,18 @@ footer {
   margin-top: 20px;
   text-align: center;
 }
-
 @media screen and (max-width: 480px) {
-  
-  /*Carrousel*/
-  .container {
-    position: sticky;
+
+  header h1 {
+    padding: 100px;
   }
 
-  /*cards*/
-  .cards {
-    top: 90px;
-    margin-right: 25px;
-    margin-top: 20px;
-    margin-bottom: 0.1px;
-    z-index: 0;
-  }
 
   .card-container {
-    padding: 1rem;
-    width: 430px;
-    box-shadow: none;
+    width: 90%;
   }
 
-  .cards h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    width: 50%;
-    margin-top: 40px;
-  }
 
-  .card-img { 
-    width: 140px;
-    height: auto;
-    margin-left: 20px;
-    margin-bottom: 25px;
-  }
-
-  .description {
-    font-size: 98%;
-  }
-
-  /*Frise*/
   .timeline {
     width: 100%;
   }
@@ -334,13 +328,17 @@ footer {
   .friseImage2 {
     display: block;
     width: 100%;
+    width: 100%;
     height: auto;
   }
 
 
+
   .timeline ul li {
     width: 90%;
+    width: 90%;
   }
+
 
 
   .timeline h2 {
@@ -349,3 +347,4 @@ footer {
     font-size: 1.7rem;
   }
 }
+
