@@ -276,7 +276,24 @@ footer {
   color: black;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  
+  .card-container {
+    width: 90%; height: 200px;
+  }
 
+  
+}
+@media screen and (max-width: 480px) {
+  
+  .card-container {
+    width: 100%; 
+  }
+
+  
+}
+
+  
  
 
 
