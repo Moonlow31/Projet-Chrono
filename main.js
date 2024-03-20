@@ -151,10 +151,10 @@ closeButton.forEach(button => {
 function frise(img, title, desc, startcolor, endcolor) {
     const newLine = `<img src=${img} class ="friseImage" alt=${title}> 
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
-        <article class="timeline-content"> 
+        <article class="timeline-content">
+            <img src=${img} class ="friseImage2" alt=${title}>
             <h2>${title}</h2>
             <p>${desc}</p>
-          
         </article>
     </li> 
     `
