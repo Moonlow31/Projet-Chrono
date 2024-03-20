@@ -51,7 +51,7 @@ const arrayCard = [
     {
         src: "./assets/imageCard/prehistoricmen.jpg",
         title: "l'Homme préhistorique",
-        desc: "Les hommes préhistoriques étaient les premiers membres de la lignée humaine, vivant avant l'avènement de l'écriture. Leur mode de vie était principalement nomade, cherchant constamment de la nourriture, de l'eau et un abri. Ils ont développé des compétences de chasse, de cueillette et de fabrication d'outils en pierre. Ces ancêtres ont également maîtrisé le feu, un tournant majeur dans leur évolution. Leur culture artistique, illustrée par des peintures rupestres et des sculptures, témoigne de leur créativité et de leur capacité à communiquer. Les hommes préhistoriques ont coexisté avec d'autres espèces humaines, telles que les Néandertaliens et les Homo erectus. Leurs découvertes archéologiques révèlent une adaptabilité remarquable à divers environnements. La génétique et l'anthropologie nous aident à reconstruire leur histoire et leur évolution. Ces premiers humains ont pavé la voie à notre développement en tant qu'espèce moderne. Nous continuons à apprendre de leur passé pour mieux comprendre notre présent et notre avenir.",
+        desc: "L'homme de Cro-Magnon était un individu préhistorique plein de surprises ! Imaginez un être robuste, aux sourcils proéminents et à la pilosité faciale sauvage, mais avec un sens de l'humour étonnamment vif. Il aurait probablement charmé ses compagnons de chasse en imitant les animaux de la savane d'une manière hilarante, ou peut-être en inventant des jeux ridiculement simples mais incroyablement divertissants avec des pierres et des bâtons. Ses rires résonneraient dans les cavernes, créant une ambiance chaleureuse et joyeuse même au cœur de l'âge de pierre. Ses pitreries pourraient même avoir été un moyen de renforcer les liens sociaux au sein de sa tribu, apportant un équilibre essentiel à la dureté de la vie quotidienne. Et qui sait, peut-être qu'il aurait également été le premier à inventer les premières blagues préhistoriques!.",
         quote: "Les premiers hommes qui ont habité la terre étaient bien à plaindre; ils étaient presque nus, ils n'avaient pas d'outils et ils devaient se défendre contre les bêtes féroces. - Voltaire",
         startcolor: "rgba(240,120,0,1) 0%",
         endcolor: "rgba(227,156,27,1) 100%"
@@ -215,7 +215,7 @@ const arrayLines = [
     endcolor:"  rgba(241,242,0,1) 100%"},
     //line7 l'homme 2.0
     {src:"/assets/imagefrise/hommedufutur.jpg",
-    title:"Le Future",
+    title:"Le Futur",
     desc:"Dans le futur, les voitures volantes seront monnaie courante, mais le code de la route restera un mystère pour la plupart des conducteurs. Les robots domestiques feront tout, sauf comprendre les instructions simples comme ramasse tes chaussettes. Les hologrammes remplaceront les conférences ennuyeuses, mais il y aura toujours quelqu'un pour poser des questions stupides à l'IA. Les voyages dans le temps seront possibles, mais les gens iront juste pour récupérer des recettes de pizza vintage. Les extraterrestres finiront par nous rendre visite, mais juste pour demander des conseils sur la façon de gérer leur propre planète en désordre. En résumé, le futur sera un mélange hilarant de technologie de pointe, de malentendus intergalactiques et de pizza froide dans l'espace.",
     startcolor:" rgba(241,242,0,1) 0%",
     endcolor:" rgba(157,255,0,1) 100%"}];
@@ -225,3 +225,12 @@ arrayLines.forEach(lineInfo => {
     });
 
 
+   
+  //theme sombre// 
+    const html = document.getElementsByTagName(`html`)[0];
+const themeSwitch = document.getElementById(`themeLogo`);
+
+themeSwitch.addEventListener(`click`, () => {
+  html.classList.toggle(`nuit`);
+  
+})
