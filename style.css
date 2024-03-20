@@ -81,13 +81,13 @@ position: relative;
     border:none;
     position: absolute;
     z-index: 5;
-    width: 2rem;
-    height: 2rem;
-    top: 18px;
+    width: 90px;
+    height: 40px;
+    top: 12px;
     right: 12px;
     background-repeat: no-repeat;
     background: rgb(0, 0, 0, 0%);
-    background-image: url(/assets/arrow/arrow\ right.png);
+    background-image: url(./assets/arrow/arrow_nav.png);
     background-size: cover;
 }
 
@@ -96,31 +96,15 @@ position: relative;
     border:none;
     position: absolute;
     z-index: 5;
-    width: 2rem;
-    height: 2rem;
+    width: 90px;
+    height: 40px;
     top: 18px;
     left: 12px;
     transform: rotate(180deg);
     background-repeat: no-repeat;
     background: rgb(0, 0, 0, 0%);
-    background-image: url(/assets/arrow/arrow\ right.png);
+    background-image: url(./assets/arrow/arrow_nav.png);
     background-size: cover;
-}
-
-#prev {
-  cursor: pointer;
-  border:none;
-  position: absolute;
-  z-index: 5;
-  width: 2rem;
-  height: 2rem;
-  top: 18px;
-  left: 12px;
-  transform: rotate(180deg);
-  background-repeat: no-repeat;
-  background: rgb(0,0,0, 0%);
-  background-image: url(./assets/arrow/arrow\ right.png);
-  background-size: cover;
 }
 
 /* case des nav*/
@@ -298,6 +282,23 @@ footer {
     padding: 100px;
   }
 
+  /*carrousel*/
+  #next {
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    right: 2px;
+    background-image: url(./assets/arrow/arrow\ right.png);
+  }
+
+  #prev {
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    left: 2px;
+    background-image: url(./assets/arrow/arrow\ right.png);
+  }
+
   /*cards*/
   .cards {
     top: 90px;
@@ -343,7 +344,6 @@ footer {
 
   .friseImage2 {
     display: block;
-    width: 100%;
     width: 100%;
     height: auto;
   }

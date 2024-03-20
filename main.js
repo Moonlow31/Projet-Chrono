@@ -151,10 +151,10 @@ closeButton.forEach(button => {
 function frise(img, title, desc, startcolor, endcolor) {
     const newLine = `<img src=${img} class ="friseImage" alt=${title}>
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
-        <article class="timeline-content"> 
+        <article class="timeline-content">
+            <img src=${img} class ="friseImage2" alt=${title}>
             <h2>${title}</h2>
             <p>${desc}</p>
-          
         </article>
     </li> 
     `
@@ -214,7 +214,6 @@ const arrayLines = [
     startcolor:"rgba(223,230,37,1) 0%",
     endcolor:"  rgba(241,242,0,1) 100%"},
     //line7 l'homme 2.0
-
     {src:"./assets/imagefrise/hommedufutur.jpg",
     title:"Le Futur",
     desc:"Dans le futur, les voitures volantes seront monnaie courante, mais le code de la route restera un mystère pour la plupart des conducteurs. Les robots domestiques feront tout, sauf comprendre les instructions simples comme ramasse tes chaussettes. Les hologrammes remplaceront les conférences ennuyeuses, mais il y aura toujours quelqu'un pour poser des questions stupides à l'IA. Les voyages dans le temps seront possibles, mais les gens iront juste pour récupérer des recettes de pizza vintage. Les extraterrestres finiront par nous rendre visite, mais juste pour demander des conseils sur la façon de gérer leur propre planète en désordre. En résumé, le futur sera un mélange hilarant de technologie de pointe, de malentendus intergalactiques et de pizza froide dans l'espace.",
