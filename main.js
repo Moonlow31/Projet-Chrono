@@ -236,3 +236,5 @@ const themeSwitch = document.getElementById(`themeLogo`);
 themeSwitch.addEventListener(`click`, () => {
   html.classList.toggle(`nuit`);
 });
+
+
