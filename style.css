@@ -161,13 +161,12 @@ border: 0.15rem solid #B1AFAF;
 }
 
 .card-img { 
-  background-color: aliceblue;
-  width: 200px;
-  height: 150px;
-  border-radius: 0.65rem;
-  box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-  margin-bottom: 10px;
-}
+width: 200px;
+height: 150px;
+border-radius: 0.65rem;
+box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+margin-bottom: 10px;
+} 
 
 .cards h2 {
   text-align: center;
@@ -208,10 +207,6 @@ border: 0.15rem solid #B1AFAF;
   width: 600px;
   height: 600px;
   box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.friseImage2 {
-  display: none;
 }
 
 .timeline :nth-child(odd) .friseImage{
@@ -316,24 +311,7 @@ footer {
     margin-left: 20px;
     margin-bottom: 25px;
   }
-
-  .description {
-    font-size: 98%;
-  }
-
-  /*Frise*/
-  .timeline {
-    padding-top: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-  }
-
-  .friseImage {
-    width: 100%;
-    display: none;
-  }
-
+  
   .friseImage2 {
     display: block;
     width: 300px;
