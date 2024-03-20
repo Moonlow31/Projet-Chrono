@@ -165,7 +165,7 @@ border: 0.15rem solid #B1AFAF;
 
 .close-button{display: flex;
   background-color: transparent;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 font-weight: bold;
  text-align: center;
  border: none;
@@ -246,7 +246,9 @@ text-align: center;
     list-style: none;
     box-shadow: -30px 18px 17px 0px #B1AFAF;
     border: 0.15rem solid #B1AFAF;
-  }
+ display: flex;
+ flex-direction: column
+ ; }
   
   .timeline ul li:last-child {
     margin-bottom: 0;}
@@ -260,15 +262,18 @@ text-align: center;
     border-radius: 0px 20px 20px 20px;
   }
  
-.timeline h2 {
+.timeline h2 {display: flex;
+justify-content: center;
+align-items: center;
   font-family: "star_jedi";
   padding-top: 50px;
- 
   padding-bottom:50px ;
-
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: black;
   width: 50%;
+padding-left: 160px;
+
+
 }
 
 .timeline p  {font-family: "radjhani";padding: 2rem;
@@ -286,6 +291,7 @@ footer {
   background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
   color: black;
   margin-top: 20px;
+  text-align: center;
 
 }
 

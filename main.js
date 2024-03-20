@@ -27,7 +27,7 @@ const cards = document.querySelector(".cards");
 function card(img, title, desc, quote, startcolor, endcolor) {
     const newCard = `
     <article class="card-container"style="background: linear-gradient(73deg, ${startcolor}, ${endcolor});">
-    <button class="close-button">&times;</button>
+    <button class="close-button">&#x274C;</button>
     <img src="${img}" class="card-img" alt="${title}">
         <h2>${title}</h2>
         <div class="description"> 
