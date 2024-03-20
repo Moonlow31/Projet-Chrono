@@ -298,12 +298,40 @@ footer {
     padding: 100px;
   }
 
-
-  .card-container {
-    width: 90%;
+  /*cards*/
+  .cards {
+    top: 90px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 0.1px;
+    z-index: 0;
   }
 
+  .card-container {
+    padding: 1rem;
+    width: 430px;
+    box-shadow: none;
+  }
 
+  .cards h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 50%;
+    margin-top: 40px;
+  }
+
+  .card-img { 
+    width: 140px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  .description {
+    font-size: 98%;
+  }
+
+  /*Frise*/
   .timeline {
     width: 100%;
   }
