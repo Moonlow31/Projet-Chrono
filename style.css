@@ -49,6 +49,7 @@ button {
 }
 
 .container {
+
   overflow: hidden;
   position: sticky;
   width: 100%;
@@ -68,7 +69,7 @@ flex-wrap: nowrap;
 
 
 .slide {
-flex: 0 0 calc(100% / 3);
+flex: 0 0 calc(100%/3);
 height: 100%;
 transition: 0.5s ease-in-out;
 }
@@ -112,18 +113,25 @@ transition: 0.5s ease-in-out;
 }
 /* case des nav*/
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
+#prehistoire:hover{background: linear-gradient(73deg, rgba(240,120,70,1) 0%, rgba(227,156,97,1) 100%)}
 
 #bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
+#bronze:hover{ background: linear-gradient(73deg, rgba(227,156,97,1) 0%, rgba(224,179,99,1) 100%);}
 
 #fer{ background: linear-gradient(73deg, rgba(224,179,29,1) 0%, rgba(224,194,94,1) 100%);}
+#fer:hover{ background: linear-gradient(73deg, rgba(224,179,99,1) 0%, rgba(224,194,164,1) 100%);}
 
 #antique{background: linear-gradient(73deg, rgba(224,194,94,1) 0%, rgba(224,203,29,1) 100%);}
+#antique:hover{background: linear-gradient(73deg, rgba(224,194,164,1) 0%, rgba(224,203,99,1) 100%);}
 
 #moyenAge{background: linear-gradient(73deg, rgba(224,203,29,1) 0%, rgba(223,230,37,1) 100%);}
+#moyenAge:hover{background: linear-gradient(73deg, rgba(224,203,99,1) 0%, rgba(223,230,107,1) 100%);}
 
 #moderne{background: linear-gradient(73deg, rgba(223,230,37,1) 0%, rgba(241,242,0,1) 100%);}
+#moderne:hover{background: linear-gradient(73deg, rgba(223,230,107,1) 0%, rgba(241,242,70,1) 100%);}
 
 #contemporain{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
+#contemporain:hover{ background: linear-gradient(73deg, rgba(241,242,70,1) 0%, rgba(157,255,70,1) 100%);}
 
 
 /*cards*/
@@ -196,32 +204,28 @@ font-style: italic;
 }
 
 /*frise*/
-
-   .timeline {padding-top: 35px;
-    width: 65%;
-    padding-left: 35px;
-    
-
-
-   
+.timeline {
+  padding-top: 35px;
+  width: 65%;
+  padding-left: 35px;
 }
+
 .friseImage {
- justify-content: center ;
   width: 55%;
- 
+}
+
+.friseImage2 {
+  display: none;
 }
 
 .timeline :nth-child(odd) .friseImage{
   float: right;
   clear: left;
-  
-
 }
 
 .timeline :nth-child(even) .friseImage{
   float: left;
   clear: right;
-
 }
 
 .timeline ul li {
@@ -272,9 +276,60 @@ footer {
   margin-top: 20px;
 }
 
- 
+@media screen and (max-width: 480px) {
+  
+  /*Carrousel*/
+  .container {
+    position: sticky;
+  }
 
+  /*cards*/
+  .cards {
+    top: 85px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 0.1px;
+    z-index: 0;
+  }
 
- 
+  .card-container {
+    padding: 1rem 1rem;
+    width: 400px;
+    }
 
- 
+  .card-img { 
+    width: 120px;
+    height: auto;
+  }
+
+  .description {
+    font-size: 98%;
+  }
+
+  /*Frise*/
+  .timeline {
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  .friseImage {
+    width: 100%;
+    display: none;
+  }
+
+  .friseImage2 {
+    display: block;
+    width: 150px;
+    height: auto;
+  }
+
+  .timeline :nth-child(odd) .friseImage{
+    float: none;
+  }
+  
+  .timeline :nth-child(even) .friseImage{
+    float: none;
+  }
+}
