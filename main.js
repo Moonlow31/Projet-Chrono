@@ -1,4 +1,7 @@
-/*caroussel*/
+
+//function strings creation de slide carrousel//
+
+    /*caroussel*/
 (function () {
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
@@ -17,11 +20,14 @@
     next.addEventListener('click', () => slideTo(++currentSlide));
 })();
 
+
+
 //function strings creation de carte//
 function card(img, title, desc, quote, startcolor, endcolor) {
     const newCard = `
     <article class="card-container"style="background: linear-gradient(73deg, ${startcolor}, ${endcolor});">
-        <img src="${img}" class="card-img" alt="${title}">
+    <button class="close-button">&times;</button>
+    <img src="${img}" class="card-img" alt="${title}">
         <h2>${title}</h2>
         <div class="description"> 
             <p>
@@ -36,7 +42,6 @@ function card(img, title, desc, quote, startcolor, endcolor) {
 
     return newCard;
 }
-
 const cards = document.querySelector(".cards");
 
 // tableau=création de carte
@@ -110,8 +115,9 @@ arrayCard.forEach(cardInfo => {
     cards.innerHTML += card(cardInfo.src, cardInfo.title, cardInfo.desc, cardInfo.quote, cardInfo.startcolor, cardInfo.endcolor);
 });
 
+
 //click caroussel-card
-const carouselItems = document.querySelectorAll('.container .carousel .slide');
+const carouselItems = document.querySelectorAll('.slide');
 
 
 document.querySelector('.card-container').style.display = 'block';
@@ -126,29 +132,37 @@ carouselItems.forEach((item, index) => {
         document.querySelectorAll('.card-container')[index].style.display = 'block';
     });
 });
-
 document.querySelectorAll('.card-container').forEach(card => {
     card.style.display = 'none';
 });
 
+/* croix fermeture cartes*/
+const closeButton = document.querySelectorAll('.close-button');
+
+
+closeButton.forEach(button => {
+    button.addEventListener('click', () => {
+      
+        button.closest('.card-container').style.display = 'none';
+    });
+});
 //function strings creation de lignes de frise
 function frise(img, title, desc, startcolor, endcolor) {
-    const newLine = `
+    const newLine = `<img src=${img} class ="friseImage" alt=${title}> 
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
         <article class="timeline-content"> 
             <h2>${title}</h2>
             <p>${desc}</p>
-           <img src=${img} class ="friseImage" alt=${title}>
-        </article>  
-       
+          
+        </article>
     </li> 
-   
-  
     `
     return newLine;
 };
 
 const lines = document.querySelector(".chronoLines");
+
+
 
 // tableau=création de ligne de frise
 const arrayLines = [
