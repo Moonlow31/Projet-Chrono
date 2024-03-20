@@ -51,7 +51,7 @@ const arrayCard = [
     {
         src: "./assets/imageCard/prehistoricmen.jpg",
         title: "l'Homme préhistorique",
-        desc: "L'homme de Cro-Magnon était un individu préhistorique plein de surprises ! Imaginez un être robuste, aux sourcils proéminents et à la pilosité faciale sauvage, mais avec un sens de l'humour étonnamment vif. Il aurait probablement charmé ses compagnons de chasse en imitant les animaux de la savane d'une manière hilarante, ou peut-être en inventant des jeux ridiculement simples mais incroyablement divertissants avec des pierres et des bâtons. Ses rires résonneraient dans les cavernes, créant une ambiance chaleureuse et joyeuse même au cœur de l'âge de pierre. Ses pitreries pourraient même avoir été un moyen de renforcer les liens sociaux au sein de sa tribu, apportant un équilibre essentiel à la dureté de la vie quotidienne. Et qui sait, peut-être qu'il aurait également été le premier à inventer les premières blagues préhistoriques!",
+        desc: "L'homme de Cro-Magnon était un individu préhistorique plein de surprises ! Imaginez un être robuste, aux sourcils proéminents et à la pilosité faciale sauvage, mais avec un sens de l'humour étonnamment vif. Il aurait probablement charmé ses compagnons de chasse en imitant les animaux de la savane d'une manière hilarante, ou peut-être en inventant des jeux ridiculement simples mais incroyablement divertissants avec des pierres et des bâtons. Ses rires résonneraient dans les cavernes, créant une ambiance chaleureuse et joyeuse même au cœur de l'âge de pierre. Ses pitreries pourraient même avoir été un moyen de renforcer les liens sociaux au sein de sa tribu, apportant un équilibre essentiel à la dureté de la vie quotidienne. Et qui sait, peut-être qu'il aurait également été le premier à inventer les premières blagues préhistoriques!.",
         quote: "Les premiers hommes qui ont habité la terre étaient bien à plaindre; ils étaient presque nus, ils n'avaient pas d'outils et ils devaient se défendre contre les bêtes féroces. - Voltaire",
         startcolor: "rgba(240,120,0,1) 0%",
         endcolor: "rgba(227,156,27,1) 100%"
@@ -223,3 +223,18 @@ const arrayLines = [
 arrayLines.forEach(lineInfo => {
         lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
     });
+  
+  
+  
+  
+  
+    const html = document.getElementsByTagName(`html`)[0];
+const themeSwitch = document.getElementById(`themeLogo`);
+
+
+
+themeSwitch.addEventListener(`click`, () => {
+  html.classList.toggle(`nuit`);
+});
+
+

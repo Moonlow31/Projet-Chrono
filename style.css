@@ -221,7 +221,6 @@ margin-bottom: 10px;
   padding-left: 35px;
   padding-top: 35px;
 }
-
 .friseImage {
   width: 55%;
   justify-content: center ;
@@ -301,7 +300,11 @@ footer {
   color: black;
   text-align: center;
 }
+
+
+
 @media screen and (max-width: 480px) {
+
 
   header h1 {
     padding: 100px;
@@ -388,4 +391,3 @@ footer {
     font-size: 1.7rem;
   }
 }
-
