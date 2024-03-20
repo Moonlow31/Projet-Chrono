@@ -149,7 +149,7 @@ closeButton.forEach(button => {
 });
 //function strings creation de lignes de frise
 function frise(img, title, desc, startcolor, endcolor) {
-    const newLine = `<img src=${img} class ="friseImage" alt=${title}> 
+    const newLine = `<img src=${img} class ="friseImage" alt=${title}>
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
         <article class="timeline-content"> 
             <h2>${title}</h2>
@@ -169,13 +169,13 @@ const lines = document.querySelector(".chronoLines");
 const arrayLines = [
     //line1 prehistoire
 
-    {src:"/assets/imagefrise/prehistoire.jpg",
+    {src:"./assets/imagefrise/prehistoire.jpg",
     title:"Préhistoire",
     desc:"La préhistoire, c'est comme un grand spectacle de stand-up comique où les dinosaures jouent les vedettes avec leurs blagues cinglantes. Les hommes des cavernes, eux, essaient de rivaliser en jonglant avec des pierres et en essayant de domestiquer les mammouths pour des numéros hilarants. C'est une époque où les repas consistent à essayer de cuire des aliments sans provoquer d'incendies, et où les premiers artistes préhistoriques tentent désespérément de dessiner sur des murs en essayant de garder leurs mains propres. C'est aussi le temps où l'homme a inventé les premiers outils, probablement pour essayer de réparer les pots cassés après des soirées préhistoriques trop animées. En bref, la préhistoire, c'est comme un sketch continu où même les plus grands moments historiques sont imprégnés d'une touche de folie et de fantaisie.", 
     startcolor:"rgba(240,120,0,1) 0%",
     endcolor:"rgba(227,156,27,1) 100%"},
     //line2 age du bronze
-    {src:"/assets/imagefrise/bronze.jpg",
+    {src:"./assets/imagefrise/bronze.jpg",
     title:"L'Âge du Bronze",
     desc:"L'Âge du Bronze, c'est un peu comme une fête costumée géante où tout le monde se prend pour un héros mythique. Les guerriers se baladent avec des épées étincelantes, mais se plaignent quand même que leur armure est trop lourde pour danser. Les rois se disputent pour des territoires en lançant des défis de force plutôt que des pétitions. Pendant ce temps, les artisans créent des chefs-d'œuvre en bronze, tout en se demandant si quelqu'un va un jour apprécier leur travail autant que leur mère. Les dieux, eux, assistent à tout ce spectacle en se demandant s'ils devraient intervenir ou juste prendre du pop-corn divin. En résumé, l'Âge du Bronze, c'est un mélange hilarant de bravoure, de vanité et de métal brillant, le tout servi avec une bonne dose d'épopée et de farce.",
     startcolor:"rgba(227,156,27,1) 0%",
@@ -208,13 +208,14 @@ const arrayLines = [
     },
     //line6 l'homme moderne
 
-    {src:"/assets/imagefrise/moderne.jpg",
+    {src:"./assets/imagefrise/moderne.jpg",
     title:"Epoque Moderne", 
     desc:"Aujourd'hui, c'est comme une émission de télé-réalité où tout le monde est accro à leurs écrans, mais personne ne sait vraiment ce qu'ils regardent. Les politiciens se lancent dans des débats dignes de séries comiques, avec des promesses plus exagérées que les scénarios de sitcoms. Pendant ce temps, les influenceurs tentent désespérément de rendre leurs vies aussi parfaites que des filtres Instagram, même si dans la vraie vie, c'est plus proche d'une sitcom des années 90. Les scientifiques jonglent entre la lutte contre les maladies et la création de gadgets qui rendent nos vies plus faciles mais aussi plus étranges. Et nous, les gens normaux, essayons simplement de comprendre ce qui se passe dans ce monde où même les chats ont leur propre chaîne YouTube. En bref, l'âge actuel, c'est comme une série télé qui essaie de mélanger drame, comédie et science-fiction, mais finit par ressembler à un épisode de La Guerre des Boutons en version numérique.",
     startcolor:"rgba(223,230,37,1) 0%",
     endcolor:"  rgba(241,242,0,1) 100%"},
     //line7 l'homme 2.0
-    {src:"/assets/imagefrise/hommedufutur.jpg",
+
+    {src:"./assets/imagefrise/hommedufutur.jpg",
     title:"Le Futur",
     desc:"Dans le futur, les voitures volantes seront monnaie courante, mais le code de la route restera un mystère pour la plupart des conducteurs. Les robots domestiques feront tout, sauf comprendre les instructions simples comme ramasse tes chaussettes. Les hologrammes remplaceront les conférences ennuyeuses, mais il y aura toujours quelqu'un pour poser des questions stupides à l'IA. Les voyages dans le temps seront possibles, mais les gens iront juste pour récupérer des recettes de pizza vintage. Les extraterrestres finiront par nous rendre visite, mais juste pour demander des conseils sur la façon de gérer leur propre planète en désordre. En résumé, le futur sera un mélange hilarant de technologie de pointe, de malentendus intergalactiques et de pizza froide dans l'espace.",
     startcolor:" rgba(241,242,0,1) 0%",
@@ -225,12 +226,3 @@ arrayLines.forEach(lineInfo => {
     });
 
 
-   
-  //theme sombre// 
-    const html = document.getElementsByTagName(`html`)[0];
-const themeSwitch = document.getElementById(`themeLogo`);
-
-themeSwitch.addEventListener(`click`, () => {
-  html.classList.toggle(`nuit`);
-  
-})

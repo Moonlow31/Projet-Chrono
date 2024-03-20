@@ -20,9 +20,6 @@ margin:0;
   flex-direction: column;
 }
 
- 
- 
-
 /*header*/
 header {
   background-image: url(./assets/time-travel-2910934_1280.jpg);
@@ -33,14 +30,13 @@ header {
 }
 
 header h1 {
- 
- font-family: "star_jedi";
- display: flex;
- justify-content: center;
- text-align: center;
- color: rgba(66, 24, 24, 0.79);
- padding: 150px;
- text-shadow: #FC0 1px 0 10px;
+  font-family: "star_jedi";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(66, 24, 24, 0.79);
+  padding: 150px;
+  text-shadow: #FC0 1px 0 10px;
 }
 
  /*changement de théme*/
@@ -79,25 +75,22 @@ position: relative;
 }
 
 .carousel-inner {
-display: flex;
-overflow: hidden;
-flex-wrap: nowrap;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
-
 
 .slide {
-flex: 0 0 calc(100% / 3);
-height: 100%;
-transition: 0.5s ease-in-out;
+  flex: 0 0 calc(100%/3);
+  height: 100%;
+  transition: 0.5s ease-in-out;
 }
-
 
 .slide button {
   width: 100%;
   height: 70px;
   object-fit: cover;
-  border-radius: 10px 10px 10px 10px;
-  
+  border-radius: 10px 10px 10px 10px; 
 }
 
 #next {
@@ -110,8 +103,9 @@ transition: 0.5s ease-in-out;
     top: 18px;
     right: 12px;
     background-repeat: no-repeat;
-    background: rgb(0,0,0, 0%);
-    background-image: url(./assets/arrow/arrow\ right.png);background-size: cover;
+    background: rgb(0, 0, 0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);
+    background-size: cover;
 }
 
 #prev {
@@ -125,10 +119,27 @@ transition: 0.5s ease-in-out;
     left: 12px;
     transform: rotate(180deg);
     background-repeat: no-repeat;
-    background: rgb(0,0,0, 0%);
-    background-image: url(./assets/arrow/arrow\ right.png);
+    background: rgb(0, 0, 0, 0%);
+    background-image: url(/assets/arrow/arrow\ right.png);
     background-size: cover;
 }
+
+#prev {
+  cursor: pointer;
+  border:none;
+  position: absolute;
+  z-index: 5;
+  width: 2rem;
+  height: 2rem;
+  top: 18px;
+  left: 12px;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background: rgb(0,0,0, 0%);
+  background-image: url(./assets/arrow/arrow\ right.png);
+  background-size: cover;
+}
+
 /* case des nav*/
 #prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
 #prehistoire:hover{background: linear-gradient(73deg, rgba(240,120,70,1) 0%, rgba(227,156,97,1) 100%)}
@@ -151,9 +162,7 @@ transition: 0.5s ease-in-out;
 #Futur{ background: linear-gradient(73deg, rgba(241,242,0,1) 0%, rgba(157,255,0,1) 100%);}
 #Futur:hover{ background: linear-gradient(73deg, rgba(241,242,70,1) 0%, rgba(157,255,70,1) 100%);}
 
-
 /*cards*/
-
 .cards {
 display: flex;
 flex-direction:column;
@@ -180,15 +189,16 @@ margin-bottom: 35px;
 
 }
 
-.close-button{display: flex;
+.close-button {
+  display: flex;
   background-color: transparent;
   font-size: 1.5rem;
-font-weight: bold;
- text-align: center;
- border: none;
- cursor: pointer;
- 
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
+
 .card-img { 
 width: 200px;
 height: 150px;
@@ -196,6 +206,7 @@ border-radius: 0.65rem;
 box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 margin-bottom: 10px;
 } 
+
 .cards h2 {
 text-align: center;
 float: left;
@@ -230,64 +241,60 @@ text-align: center;
   
 }
 .friseImage {
- justify-content: center ;
+  width: 55%;
+  justify-content: center ;
   width: 600px;
- height: 600px;
- box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  height: 600px;
+  box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .timeline :nth-child(odd) .friseImage{
   float: right;
   clear: left;
-  
-
 }
 
 .timeline :nth-child(even) .friseImage{
   float: left;
   clear: right;
-
 }
 
 .timeline ul li {
- 
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px; 
- width: 40%;
- height: 100%;
-    margin-bottom: 50px;
-    list-style: none;
-    box-shadow: -30px 18px 17px 0px #B1AFAF;
-    border: 0.15rem solid #B1AFAF;
- display: flex;
- flex-direction: column
- ; }
+  width: 40%;
+  height: 100%;
+  margin-bottom: 50px;
+  list-style: none;
+  box-shadow: -30px 18px 17px 0px #B1AFAF;
+  border: 0.15rem solid #B1AFAF;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
   
-  .timeline ul li:last-child {
-    margin-bottom: 0;}
-  
-  .timeline ul li:nth-child(odd) {
-   
-    border-radius: 20px 0px 20px 20px;
-  }
-  .timeline ul li:nth-child(even) {
-  
-    border-radius: 0px 20px 20px 20px;
-  }
+.timeline ul li:nth-child(odd) {
+  border-radius: 20px 0px 20px 20px;
+}
+
+.timeline ul li:nth-child(even) {
+  border-radius: 0px 20px 20px 20px;
+}
  
-.timeline h2 {display: flex;
-justify-content: center;
-align-items: center;
+.timeline h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "star_jedi";
   padding-top: 50px;
   padding-bottom:50px ;
   font-size: 1.5rem;
   color: black;
   width: 50%;
-padding-left: 160px;
-
-
+  padding-left: 160px;
 }
 
 .timeline p  {font-family: "radjhani";padding: 2rem;
@@ -295,11 +302,9 @@ padding-left: 160px;
   font-weight: 400;
   box-shadow: -5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
   border-radius: 10px;
-;}
+}
 
 /*footer*/
-
-
 footer {
   font-family: "radjhani";
   background: linear-gradient( 73deg, rgba(240,120,0,1) 0% , rgba(157,255,0,1) 100% );    
