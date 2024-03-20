@@ -223,4 +223,18 @@ const arrayLines = [
 arrayLines.forEach(lineInfo => {
         lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
     });
+  
+  
+  
+  
+  
+    const html = document.getElementsByTagName(`html`)[0];
+const themeSwitch = document.getElementById(`themeLogo`);
+
+
+
+themeSwitch.addEventListener(`click`, () => {
+  html.classList.toggle(`nuit`);
+});
+
 
