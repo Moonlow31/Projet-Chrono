@@ -247,7 +247,7 @@ text-align: center;
   height: 600px;
   box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
-
+.friseImage2{display: none;}
 .timeline :nth-child(odd) .friseImage{
   float: right;
   clear: left;
@@ -312,4 +312,90 @@ footer {
   text-align: center;
   overflow:hidden;
 
+}@media screen and (max-width: 480px) {
+
+  header h1 {
+    padding: 100px;
+  }
+
+  /*carrousel*/
+  #next {
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    right: 2px;
+    background-image: url(./assets/arrow/arrow\ right.png);
+  }
+
+  #prev {
+    width: 2rem;
+    height: 2rem;
+    top: 18px;
+    left: 2px;
+    background-image: url(./assets/arrow/arrow\ right.png);
+  }
+
+  /*cards*/
+  .cards {
+    top: 90px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 0.1px;
+    z-index: 0;
+  }
+
+  .card-container {
+    padding: 1rem;
+    width: 430px;
+    box-shadow: none;
+  }
+
+  .cards h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 50%;
+    margin-top: 40px;
+  }
+
+  .card-img { 
+    width: 140px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  .description {
+    font-size: 98%;
+  }
+
+  /*Frise*/
+  .timeline {
+    width: 100%;
+  }
+
+  .friseImage {
+    width: 100%;
+    display: none;
+  }
+
+  .friseImage2 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  .timeline ul li {
+    width: 90%;
+    width: 90%;
+  }
+
+
+
+  .timeline h2 {
+    width: 100%;
+    padding-left: 0;
+    font-size: 1.7rem;
+  }
 }
