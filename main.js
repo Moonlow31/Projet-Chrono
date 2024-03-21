@@ -2,7 +2,7 @@ const cards = document.querySelector(".cards");
 
 //function strings creation de slide carrousel//
 
-    /*caroussel*/
+/*caroussel*/
 (function () {
     const prev = document.querySelector('#prev');
     const next = document.querySelector('#next');
@@ -120,7 +120,6 @@ arrayCard.forEach(cardInfo => {
 //click caroussel-card
 const carouselItems = document.querySelectorAll('.slide');
 
-
 document.querySelector('.card-container').style.display = 'block';
 
 carouselItems.forEach((item, index) => {
@@ -140,7 +139,6 @@ document.querySelectorAll('.card-container').forEach(card => {
 /* croix fermeture cartes*/
 const closeButton = document.querySelectorAll('.close-button');
 
-
 closeButton.forEach(button => {
     button.addEventListener('click', () => {
       
@@ -153,7 +151,7 @@ function frise(img, title, desc, startcolor, endcolor) {
     <li style="background: linear-gradient(73deg,${startcolor},${endcolor});>
         <article class="timeline-content">
             <img src=${img} class ="friseImage2" alt=${title}>
-            <h2>${title}</h2>
+           <h2>${title}</h2>
             <p>${desc}</p>
         </article>
     </li> 
@@ -221,18 +219,7 @@ const arrayLines = [
     endcolor:" rgba(157,255,0,1) 100%"}];
     
 arrayLines.forEach(lineInfo => {
-        lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
-    });
-  
-  
-  
-  
-  
-    const html = document.getElementsByTagName(`html`)[0];
-const themeSwitch = document.getElementById(`themeLogo`);
-
-
-
-themeSwitch.addEventListener(`click`, () => {
-  html.classList.toggle(`nuit`);
+    lines.innerHTML += frise(lineInfo.src, lineInfo.title, lineInfo.desc, lineInfo.startcolor,lineInfo.endcolor);
 });
+  
+  

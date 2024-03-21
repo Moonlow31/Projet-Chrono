@@ -147,20 +147,21 @@ position: relative;
 #Futur:hover{ background: linear-gradient(73deg, rgba(241,242,70,1) 0%, rgba(157,255,70,1) 100%);}
 
 /*cards*/
+
+
+
 .cards {
 display: flex;
 flex-direction:column;
 align-items: end; 
+position: -webkit-sticky;
 position:sticky;
 z-index: 4;
 bottom: 180px;
 padding-top: 64px;
 padding-bottom: -90px;
+vertical-align:top;}
 
-
-
-
-}
 
 .card-container {
 background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);
@@ -204,10 +205,11 @@ margin-right: 20px;
 
 .description {
   font-family: "radjhani";
-  padding: 1.6rem;
-  font-size: 100%;
+ padding: 1rem;
+  font-size: 1rem;
   box-shadow: 5px 5px 5px 0px black, inset 0px 0px 5px 0px black, 0px 0px 0px 0px rgba(0,0,0,0);
   border-radius: 10px;
+  font-weight:bolder;
 }
 
 .quote {
@@ -220,17 +222,20 @@ margin-right: 20px;
 }
 
 /*frise*/
+
 .timeline {
   width: 65%;
   padding-left: 35px;
   padding-top: 35px;
 }
 .friseImage {
-  width: 55%;
-  justify-content: center ;
   width: 600px;
   height: 600px;
   box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  margin-top:60px;
+  margin-right: 40px;
+  border-radius: 0.65rem;
+
 }
 
 .friseImage2 {
@@ -269,11 +274,11 @@ margin-right: 20px;
 }
   
 .timeline ul li:nth-child(odd) {
-  border-radius: 20px 0px 20px 20px;
+  border-radius: 0.65rem;
 }
 
 .timeline ul li:nth-child(even) {
-  border-radius: 0px 20px 20px 20px;
+  border-radius: 0.65rem;
 }
  
 .timeline h2 {
@@ -287,6 +292,7 @@ margin-right: 20px;
   color: black;
   width: 50%;
   padding-left: 160px;
+  white-space: nowrap;
 }
 
 .timeline p  {
