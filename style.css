@@ -147,20 +147,21 @@ position: relative;
 #Futur:hover{ background: linear-gradient(73deg, rgba(241,242,70,1) 0%, rgba(157,255,70,1) 100%);}
 
 /*cards*/
+
+
+
 .cards {
 display: flex;
 flex-direction:column;
 align-items: end; 
+position: -webkit-sticky;
 position:sticky;
 z-index: 4;
 bottom: 180px;
 padding-top: 64px;
 padding-bottom: -90px;
+vertical-align:top;}
 
-
-
-
-}
 
 .card-container {
 background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);
@@ -220,6 +221,7 @@ margin-right: 20px;
 }
 
 /*frise*/
+
 .timeline {
   width: 65%;
   padding-left: 35px;
@@ -287,6 +289,7 @@ margin-right: 20px;
   color: black;
   width: 50%;
   padding-left: 160px;
+  white-space: nowrap;
 }
 
 .timeline p  {
