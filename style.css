@@ -43,22 +43,6 @@ header h1 {
   text-shadow: #FC0 1px 0 10px;
 }
 
- /*changement de théme*/
- #themeLogo{position: absolute;
-  top:10px;
-  right: 30px;
-  font-size: 40px;
-  cursor: pointer;
-  background-color: transparent;}
-
-  html{background-color: antiquewhite;
-  color: black;}
-
-html.nuit{background-color: #3A3B40;
-    color: rgb(124, 49, 49);
-  }
-
- h1 h2 .nuit{color: aliceblue;}
 
 /* caroussel*/
 button {
@@ -72,10 +56,12 @@ button {
   width: 100%;
   top: 0;
   z-index: 5;
+  
 }
 
 .carousel {
 position: relative;
+ 
 }
 
 .carousel-inner {
@@ -95,6 +81,7 @@ position: relative;
   height: 70px;
   object-fit: cover;
   border-radius: 10px 10px 10px 10px; 
+  
 }
 
 #next {
@@ -137,7 +124,8 @@ position: relative;
 }
 
 /* case des nav*/
-#prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%)}
+#prehistoire{background: linear-gradient(73deg, rgba(240,120,0,1) 0%, rgba(227,156,27,1) 100%);
+}
 #prehistoire:hover{background: linear-gradient(73deg, rgba(240,120,70,1) 0%, rgba(227,156,97,1) 100%)}
 
 #bronze{ background: linear-gradient(73deg, rgba(227,156,27,1) 0%, rgba(224,179,29,1) 100%);}
@@ -178,7 +166,7 @@ padding-bottom: -90px;
 background: linear-gradient(90deg, rgba(240,120,0,1) 0%, rgba(239,124,4,1) 10%, rgb(216, 117, 11) 15%, rgba(229,163,43,1) 100%);
 padding: 1rem 1rem;
 width: 30%;
-box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: 0px 0px 1px 1px #000000, inset 0px 0px 1px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 border-radius:  10px 10px 10px 10px;
 margin-right: 35px;
 margin-top: 35px;
@@ -201,7 +189,8 @@ height: 150px;
 border-radius: 0.65rem;
 box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 margin-bottom: 10px;
-margin-left: 10px;
+margin-left: 20px;
+margin-right: 20px;
 } 
 
 .cards h2 {
@@ -271,7 +260,8 @@ margin-left: 10px;
   list-style: none;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 0px 1px 1px #000000, inset 0px 0px 1px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+ 
 }
 
 .timeline ul li:last-child {
@@ -344,37 +334,40 @@ footer {
 
   /*cards*/
   .cards {
-    top: 90px;
-    margin-right: 25px;
-    margin-top: 20px;
-    margin-bottom: 0.1px;
-    z-index: 0;
+  
+    z-index: 4;
+    position: sticky;
+  bottom: -30px;
+
+
+
   }
 
   .card-container {
     padding: 1rem;
     width: 430px;
-    box-shadow: none;
+   
   }
 
   .cards h2 {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     width: 50%;
     margin-top: 40px;
   }
 
   .card-img { 
-    width: 140px;
-    height: auto;
+    width: 100px;
+    height: 100px;
     margin-left: 20px;
     margin-bottom: 25px;
   }
 
   .description {
-    font-size: 98%;
+  
+    font-size: 1rem;
   }
-
+.quote{font-size: 1rem;}
   /*Frise*/
   .timeline {
     width: 100%;
