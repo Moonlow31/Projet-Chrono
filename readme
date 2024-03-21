@@ -1,1 +1,36 @@
-La premiére pierre de l'édifice
+# Frise chronologique animée
+
+[![forthebadge](https://forthebadge.com/images/featured/featured-uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+
+Notre projet est une site web qui permet de se documenter de manière amusante sur des périodes de l'histoire de l'humanité.
+
+### Pré-requis
+
+Aucun pré-requis n'est nécessaire pour consulter ou modifier le site
+
+## Les languages utilisés pour développer le site
+
+	- Html
+	- CSS
+	- JavaScript
+
+Ainsi que :
+
+	- Git
+	- Github
+
+## Versions
+
+Première version stable et fonctionnel : 1.0.0 (version actuel)
+
+## Auteurs
+
+* **Sacha Darras** (https://github.com/Sachdarras)
+* **Jebri Mohamed** (https://github.com/memdjjebri)
+* **Jeviraj Jeyaratnam** (https://github.com/Jxxxxj)
+* **Franck Herpoux** (https://github.com/Moonlow31)
+
+## Remerciements
+
+Nous tenons à remercier la Wild Code School ainsi que notre formateur * **Anthony Gorsky** (https://github.com/GorskiAnthony),
+pour nous avoir aidé et soutenue dans ce projet
