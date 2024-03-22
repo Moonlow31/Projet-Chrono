@@ -222,7 +222,8 @@ margin-right: 20px;
 }
 
 /*frise*/
-
+.frise{z-index: 3;
+position: relative;}
 .timeline {
   width: 65%;
   padding-left: 35px;
